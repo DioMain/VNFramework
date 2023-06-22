@@ -1,0 +1,118 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AudioManager : MonoBehaviour
+{
+    [SerializeField]
+    private AudioSource bgmSource;
+    [SerializeField]
+    private AudioSource bgsSource;
+    [SerializeField]
+    private AudioSource soundSource;
+    [SerializeField] 
+    private AudioSource battleSource;
+
+    [SerializeField]
+    private bool isFadingBGM = false;
+    public bool IsFadingBGM => isFadingBGM;
+
+    public float BGMVolume
+    {
+        get => bgmSource.volume;
+        set => bgmSource.volume = value;
+    }
+    public float BGSVolume
+    {
+        get => bgsSource.volume;
+        set => bgsSource.volume = value;
+    }
+    public float BattleVolume
+    {
+        get => battleSource.volume;
+        set => battleSource.volume = value;
+    }
+
+    public bool BGMPlaying => bgmSource.isPlaying;
+    public bool BGSPlaying => bgsSource.isPlaying;
+    public bool BattlePlaying => battleSource.isPlaying;
+
+    public void SetBGM(AudioClip clip, bool autoplay = false)
+    {
+        StopBGM();
+
+        bgmSource.clip = clip;
+
+        if (autoplay)
+            PlayBGM();
+    }
+    public void PlayBGM() => bgmSource.Play();
+    public void StopBGM() => bgmSource.Stop();
+    public void PauseBGM() => bgmSource.Pause();
+    /// <summary>
+    /// Создаёд затухание BGM
+    /// </summary>
+    /// <param name="time">в секундах</param>
+    public void FadeBGM(float time, bool stop = true) => StartCoroutine(FadeBGMCoroutine(time, stop));
+
+    public void SetBattle(AudioClip clip)
+    {
+        bool autoplay = battleSource.isPlaying;
+
+        StopBattle();
+
+        battleSource.clip = clip;
+
+        if (autoplay)
+            PlayBattle();
+    }
+    public void PlayBattle() => battleSource.Play();
+    public void StopBattle() => battleSource.Stop();
+
+    public void SetBGS(AudioClip clip, bool autoplay = false)
+    {
+        StopBGS();
+
+        bgsSource.clip = clip;
+
+        if (autoplay)
+            PlayBGS();
+    }
+    public void PlayBGS() => bgsSource.Play();
+    public void StopBGS() => bgsSource.Stop();
+
+    public void PlaySound(AudioClip clip)
+    {
+        if (soundSource.isPlaying)
+            soundSource.Stop();
+
+        soundSource.clip = clip;
+
+        soundSource.Play();
+    }
+
+    private IEnumerator FadeBGMCoroutine(float time, bool stop)
+    {
+        isFadingBGM = true;
+
+        float oldVolume = bgmSource.volume;
+
+        float step = oldVolume / time;
+
+        while (bgmSource.volume > 0)
+        {
+            bgmSource.volume -= step * Time.deltaTime;
+
+            yield return null;
+        }
+
+        if (stop)
+            StopBGM();
+        else
+            PauseBGM();
+
+        bgmSource.volume = oldVolume;
+
+        isFadingBGM = false;
+    }
+}
