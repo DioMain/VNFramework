@@ -10,7 +10,7 @@ public class StopAction : ActionBase
 
     public override IEnumerator EventCorotine()
     {
-        MainEvent.SetIndex(MainEvent.Events.Count - 1);
+        MainEvent.SetIndex(MainEvent.Actions.Count - 1);
 
         //MapManager.Instance.EventManager.StopCurrent();
 

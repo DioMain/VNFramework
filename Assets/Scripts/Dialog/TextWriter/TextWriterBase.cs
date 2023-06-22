@@ -20,7 +20,7 @@ public abstract class TextWriterBase : MonoBehaviour, IGameInited
     [Range(1f, 100f)]
     public float Speed = 1f;
     [Range(1f, 100f)]
-    public float defaultSpeed = 1f;
+    public float defaultSpeed = 22.4f;
 
     public bool Clear = true;
     public bool WaitPress = true;

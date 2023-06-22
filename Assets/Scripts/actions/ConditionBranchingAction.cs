@@ -96,9 +96,9 @@ public class ConditionBranchingAction : ActionBase
 
             if (!IsTrue)
             {
-                for (int i = MainEvent.Index + 1; i < MainEvent.Events.Count; i++)
+                for (int i = MainEvent.Index + 1; i < MainEvent.Actions.Count; i++)
                 {
-                    if (MainEvent.Events[i] is ConditionBranchingAction evn)
+                    if (MainEvent.Actions[i] is ConditionBranchingAction evn)
                     {
                         if (evn.Index == Index &&
                             (evn.Type == ConditionType.EndIf
@@ -120,9 +120,9 @@ public class ConditionBranchingAction : ActionBase
 
             if (!IsTrue)
             {
-                for (int i = MainEvent.Index + 1; i < MainEvent.Events.Count; i++)
+                for (int i = MainEvent.Index + 1; i < MainEvent.Actions.Count; i++)
                 {
-                    if (MainEvent.Events[i] is ConditionBranchingAction evn)
+                    if (MainEvent.Actions[i] is ConditionBranchingAction evn)
                     {
                         if (evn.Index == Index &&
                             (evn.Type == ConditionType.EndIf
@@ -144,9 +144,9 @@ public class ConditionBranchingAction : ActionBase
 
             if (ifevent.IsTrue == true)
             {
-                for (int i = MainEvent.Index + 1; i < MainEvent.Events.Count; i++)
+                for (int i = MainEvent.Index + 1; i < MainEvent.Actions.Count; i++)
                 {
-                    if (MainEvent.Events[i] is ConditionBranchingAction evn)
+                    if (MainEvent.Actions[i] is ConditionBranchingAction evn)
                     {
                         if (evn.Index == Index &&
                             (evn.Type == ConditionType.EndIf))

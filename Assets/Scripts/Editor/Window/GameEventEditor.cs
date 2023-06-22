@@ -34,17 +34,17 @@ public class GameEventEditor : EditorWindow, IDisposable
         EditorGUILayout.BeginVertical();
         scroll = EditorGUILayout.BeginScrollView(scroll);
 
-        for (int i = 0; i < eventPipeLine.Events.Count; i++)
+        for (int i = 0; i < eventPipeLine.Actions.Count; i++)
         {
             EditorGUILayout.BeginHorizontal(GUI.skin.box);
-            GUILayout.Label($"{eventPipeLine.Events[i].Name}: {{{eventPipeLine.Events[i].GetInfo()}}}");
+            GUILayout.Label($"{eventPipeLine.Actions[i].Name}: {{{eventPipeLine.Actions[i].GetInfo()}}}");
 
             EditorGUILayout.BeginHorizontal(GUILayout.Width(225));
 
             if (GUILayout.Button("Изменить", GUILayout.Width(75)))
             {
                 currentId = i;
-                OpenNeedWindow(eventPipeLine.Events[i]);
+                OpenNeedWindow(eventPipeLine.Actions[i]);
             }
 
             if (GUILayout.Button("Удалить", GUILayout.Width(75)))
@@ -73,7 +73,7 @@ public class GameEventEditor : EditorWindow, IDisposable
 
     private void DeleteEvent(int index)
     {
-        eventPipeLine.Events.RemoveAt(index);
+        eventPipeLine.Actions.RemoveAt(index);
 
         if (eventPipeLine.DispathObject != null)
             EditorUtility.SetDirty(eventPipeLine.DispathObject);

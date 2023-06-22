@@ -10,7 +10,7 @@ using UnityEngine;
 public class GameEvent
 {
     [SerializeReference]
-    public List<ActionBase> Events = new List<ActionBase>();
+    public List<ActionBase> Actions = new List<ActionBase>();
 
     public List<ConditionBranchingAction> ConditionEvents = new List<ConditionBranchingAction>();
 
@@ -54,7 +54,7 @@ public class GameEvent
 
     public void SetIndex(int index)
     {
-        if (index < 0 || index >= Events.Count)
+        if (index < 0 || index >= Actions.Count)
         {
             Debug.LogWarning("Не правильный индекс в EventPipeLineBase!");
             return;
@@ -71,7 +71,7 @@ public class GameEvent
         yield return null;
 
         int i = 0;
-        foreach (var item in Events)
+        foreach (var item in Actions)
         {
             item.MainEvent = this;
             item.ActionIndex = i;
@@ -80,9 +80,9 @@ public class GameEvent
         }
 
         index = 0;
-        while (index < Events.Count)
+        while (index < Actions.Count)
         {
-            yield return DispathObject.StartCoroutine(Events[index].EventCorotine());
+            yield return DispathObject.StartCoroutine(Actions[index].EventCorotine());
 
             if (!indexChanged)
                 index++;

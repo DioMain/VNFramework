@@ -78,14 +78,14 @@ public abstract class ActionEditorWindowBase<T> : EditorWindow, IDisposable
     {
         if (isEdit)
         {
-            GameEventEditor.Instance.EventPipeLine.Events[GameEventEditor.Instance.CurrentId] = @event;
+            GameEventEditor.Instance.EventPipeLine.Actions[GameEventEditor.Instance.CurrentId] = @event;
         }
         else
         {
             if (GameEventEditor.Instance.CurrentId > -1)
-                GameEventEditor.Instance.EventPipeLine.Events.Insert(GameEventEditor.Instance.CurrentId, @event);
+                GameEventEditor.Instance.EventPipeLine.Actions.Insert(GameEventEditor.Instance.CurrentId, @event);
             else
-                GameEventEditor.Instance.EventPipeLine.Events.Add(@event);
+                GameEventEditor.Instance.EventPipeLine.Actions.Add(@event);
         }
     }
 

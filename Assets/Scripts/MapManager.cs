@@ -10,11 +10,13 @@ public class MapManager : MonoBehaviour
     public static MapManager Instance;
 
     public DialogManager Dialog;
+    public GlobalEventObject Event;
 
     public void Start()
     {
         Instance = this;
 
         Dialog.Init();
+        Event.Init();
     }
 }

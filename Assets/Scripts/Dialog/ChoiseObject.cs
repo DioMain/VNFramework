@@ -20,7 +20,7 @@ public class ChoiseObject : MonoBehaviour
         set
         {
             isChoised = value;
-            m_Animator.SetBool("Choised", value);
+            m_Animator.SetBool("Selected", value);
         }
     }
 }
