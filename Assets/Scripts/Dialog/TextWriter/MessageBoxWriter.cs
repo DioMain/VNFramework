@@ -24,6 +24,7 @@ public class MessageBoxWriter : TextWriterBase
     public override void OnWaitStart()
     {
         arrow.SetActive(true);
+        //asd
     }
     public override void OnWaitEnd()
     {
