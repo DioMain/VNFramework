@@ -216,15 +216,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   event:
     Actions:
-    - rid: 4743668613810487298
-    - rid: 4743668613810487299
-    - rid: 4743668613810487301
-    - rid: 4743668613810487300
-    - rid: 4743668613810487302
-    - rid: 4743668613810487305
-    - rid: 4743668613810487303
-    - rid: 4743668613810487306
-    - rid: 4743668613810487304
+    - rid: 24553719507714186
+    - rid: 24553719507714123
+    - rid: 24553719507714124
+    - rid: 24553719507714125
+    - rid: 24553719507714129
+    - rid: 24553719507714187
+    - rid: 24553719507714126
+    - rid: 24553719507714130
+    - rid: 24553719507714188
+    - rid: 24553719507714180
+    - rid: 24553719507714181
+    - rid: 24553719507714189
+    - rid: 24553719507714178
+    - rid: 24553719507714154
+    - rid: 24553719507714155
+    - rid: 24553719507714156
+    - rid: 24553719507714192
+    - rid: 24553719507714193
+    - rid: 24553719507714194
+    - rid: 24553719507714195
+    - rid: 24553719507714196
+    - rid: 24553719507714202
+    - rid: 24553719507714203
+    - rid: 24553719507714204
+    - rid: 24553719507714200
+    - rid: 24553719507714197
+    - rid: 24553719507714201
+    - rid: 24553719507714198
     ConditionEvents: []
     DispathObject: {fileID: 132164054}
     DispathScriptable: {fileID: 0}
@@ -232,40 +251,30 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 4743668613810487298
+    - rid: 24553719507714123
       type: {class: MessageAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: Message
-        Text: "\u0422\u044B \u043F\u0438\u0434\u043E\u0440?"
-        CharName: "\u0413\u0435\u0439"
+        Text: "\u0427\u0422\u041E? /. \u041F\u041E\u0427\u0415\u041C\u0423 \u042F
+          /| \u0447\u0435\u0440\u043D\u044B\u0439"
+        CharName: "\u0415\u0424\u0418\u041C"
         Speed: 0
         Wait: 1
         Clear: 1
         CloseAfter: 0
-    - rid: 4743668613810487299
+    - rid: 24553719507714124
       type: {class: ChoiseAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: ChoiseEvent
         Choises:
-        - 11
-        - 2222
-        - 333333
+        - "\u043D\u0435 \u0447\u0435\u0440\u043D\u044B\u0439"
+        - "\u0447\u0435\u0440\u043D\u044B\u0439"
+        - "\u044F \u0441\u043B\u0435\u043F\u043E\u0439"
         - 
         - 
-    - rid: 4743668613810487300
-      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: Message
-        Text: gay/p gay/D
-        CharName: "\u041F\u0438\u0434\u043E\u0440\u0430\u0441"
-        Speed: 0
-        Wait: 0
-        Clear: 1
-        CloseAfter: 1
-    - rid: 4743668613810487301
+    - rid: 24553719507714125
       type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -281,7 +290,7 @@ MonoBehaviour:
         VariableFloatValue: 0
         VariableBoolValue: 0
         ChoiseExpected: 0
-    - rid: 4743668613810487302
+    - rid: 24553719507714126
       type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -297,23 +306,67 @@ MonoBehaviour:
         VariableFloatValue: 0
         VariableBoolValue: 0
         ChoiseExpected: 1
-    - rid: 4743668613810487303
+    - rid: 24553719507714129
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u044F \u043D\u0435 /D\u0447\u0435\u0440\u043D\u044B\u0439"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 24553719507714130
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: ok
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 24553719507714154
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u044F \u0442\u043E\u0447\u043D\u043E \u043D\u0435 \u0447\u0435\u0440\u043D\u044B\u0439?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 24553719507714155
+      type: {class: ChoiseAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ChoiseEvent
+        Choises:
+        - "\u0442\u043E\u0447\u043D\u043E"
+        - "\u0447\u0435\u0440\u043D\u044B\u0439"
+        - "\u0441\u043B\u0435\u043F\u043E\u0439"
+        - 
+        - 
+    - rid: 24553719507714156
       type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: ConditionBranching
-        Type: 1
+        Type: 0
         Index: 0
         CompareVariable: 0
         CompareChoise: 1
         VariableKey: 
-        VariableType: 1
+        VariableType: 0
         VariableStringValue: 
         VariableIntValue: 0
         VariableFloatValue: 0
         VariableBoolValue: 0
-        ChoiseExpected: 2
-    - rid: 4743668613810487304
+        ChoiseExpected: 0
+    - rid: 24553719507714178
       type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -329,7 +382,184 @@ MonoBehaviour:
         VariableFloatValue: 0
         VariableBoolValue: 0
         ChoiseExpected: 0
-    - rid: 4743668613810487305
+    - rid: 24553719507714180
+      type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ConditionBranching
+        Type: 2
+        Index: 0
+        CompareVariable: 0
+        CompareChoise: 0
+        VariableKey: 
+        VariableType: 0
+        VariableStringValue: 
+        VariableIntValue: 0
+        VariableFloatValue: 0
+        VariableBoolValue: 0
+        ChoiseExpected: 0
+    - rid: 24553719507714181
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u043E\u0442\u043A\u0440\u043E\u0439 \u0433\u043B\u0430\u0437\u0430"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 24553719507714186
+      type: {class: ManageVarsAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageVars
+        OType: 0
+        VType: 1
+        BoolValue: 0
+        IntValue: 0
+        FloatValue: 0
+        StringValue: 
+        Key: Ch0
+    - rid: 24553719507714187
+      type: {class: ManageVarsAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageVars
+        OType: 0
+        VType: 1
+        BoolValue: 0
+        IntValue: 0
+        FloatValue: 0
+        StringValue: 
+        Key: ch0
+    - rid: 24553719507714188
+      type: {class: ManageVarsAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageVars
+        OType: 0
+        VType: 1
+        BoolValue: 0
+        IntValue: 1
+        FloatValue: 0
+        StringValue: 
+        Key: ch0
+    - rid: 24553719507714189
+      type: {class: ManageVarsAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageVars
+        OType: 0
+        VType: 1
+        BoolValue: 0
+        IntValue: 2
+        FloatValue: 0
+        StringValue: 
+        Key: ch0
+    - rid: 24553719507714192
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: 1
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 24553719507714193
+      type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ConditionBranching
+        Type: 0
+        Index: 1
+        CompareVariable: 1
+        CompareChoise: 0
+        VariableKey: ch0
+        VariableType: 1
+        VariableStringValue: 
+        VariableIntValue: 1
+        VariableFloatValue: 0
+        VariableBoolValue: 0
+        ChoiseExpected: 0
+    - rid: 24553719507714194
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: true
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 24553719507714195
+      type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ConditionBranching
+        Type: 3
+        Index: 1
+        CompareVariable: 0
+        CompareChoise: 0
+        VariableKey: 
+        VariableType: 0
+        VariableStringValue: 
+        VariableIntValue: 0
+        VariableFloatValue: 0
+        VariableBoolValue: 0
+        ChoiseExpected: 0
+    - rid: 24553719507714196
+      type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ConditionBranching
+        Type: 1
+        Index: 0
+        CompareVariable: 0
+        CompareChoise: 1
+        VariableKey: 
+        VariableType: 0
+        VariableStringValue: 
+        VariableIntValue: 0
+        VariableFloatValue: 0
+        VariableBoolValue: 0
+        ChoiseExpected: 1
+    - rid: 24553719507714197
+      type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ConditionBranching
+        Type: 2
+        Index: 0
+        CompareVariable: 0
+        CompareChoise: 0
+        VariableKey: 
+        VariableType: 0
+        VariableStringValue: 
+        VariableIntValue: 0
+        VariableFloatValue: 0
+        VariableBoolValue: 0
+        ChoiseExpected: 0
+    - rid: 24553719507714198
+      type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ConditionBranching
+        Type: 3
+        Index: 0
+        CompareVariable: 0
+        CompareChoise: 0
+        VariableKey: 
+        VariableType: 0
+        VariableStringValue: 
+        VariableIntValue: 0
+        VariableFloatValue: 0
+        VariableBoolValue: 0
+        ChoiseExpected: 0
+    - rid: 24553719507714200
       type: {class: MessageAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -339,8 +569,8 @@ MonoBehaviour:
         Speed: 0
         Wait: 1
         Clear: 1
-        CloseAfter: 1
-    - rid: 4743668613810487306
+        CloseAfter: 0
+    - rid: 24553719507714201
       type: {class: MessageAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -350,7 +580,50 @@ MonoBehaviour:
         Speed: 0
         Wait: 1
         Clear: 1
-        CloseAfter: 1
+        CloseAfter: 0
+    - rid: 24553719507714202
+      type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ConditionBranching
+        Type: 0
+        Index: 1
+        CompareVariable: 1
+        CompareChoise: 0
+        VariableKey: ch0
+        VariableType: 1
+        VariableStringValue: 
+        VariableIntValue: 1
+        VariableFloatValue: 0
+        VariableBoolValue: 0
+        ChoiseExpected: 0
+    - rid: 24553719507714203
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: true 2
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 24553719507714204
+      type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ConditionBranching
+        Type: 3
+        Index: 1
+        CompareVariable: 0
+        CompareChoise: 0
+        VariableKey: 
+        VariableType: 0
+        VariableStringValue: 
+        VariableIntValue: 0
+        VariableFloatValue: 0
+        VariableBoolValue: 0
+        ChoiseExpected: 0
 --- !u!1 &145334455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,7 +2088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.22424912, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.22424991, y: -0.000015258789}
   m_SizeDelta: {x: 8.570007, y: -6}
   m_Pivot: {x: -0.00000013783574, y: 0.5}
 --- !u!114 &1513866693
