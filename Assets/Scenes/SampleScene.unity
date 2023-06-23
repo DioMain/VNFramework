@@ -225,6 +225,7 @@ MonoBehaviour:
     - rid: 4743668613810487303
     - rid: 4743668613810487306
     - rid: 4743668613810487304
+    - rid: 4743668613810487307
     ConditionEvents: []
     DispathObject: {fileID: 132164054}
     DispathScriptable: {fileID: 0}
@@ -252,8 +253,8 @@ MonoBehaviour:
         - 11
         - 2222
         - 333333
-        - 
-        - 
+        - 2
+        - 2
     - rid: 4743668613810487300
       type: {class: MessageAction, ns: , asm: Assembly-CSharp}
       data:
@@ -351,6 +352,18 @@ MonoBehaviour:
         Wait: 1
         Clear: 1
         CloseAfter: 1
+    - rid: 4743668613810487307
+      type: {class: ManageVarsAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageVars
+        OType: 0
+        VType: 0
+        BoolValue: 1
+        IntValue: 0
+        FloatValue: 0
+        StringValue: 
+        Key: 123
 --- !u!1 &145334455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,7 +1828,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.22424912, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.22424917, y: -0.000015258789}
   m_SizeDelta: {x: 8.570007, y: -6}
   m_Pivot: {x: -0.00000013783574, y: 0.5}
 --- !u!114 &1513866693
