@@ -11,12 +11,9 @@ public class ConditionBranchingEditor : ActionEditorWindowBase<ConditionBranchin
         EditorGUILayout.HelpBox(
             "Для создание условия требуется сначала создать " +
             "If событие, а в конце обязательно должно событие EndIf. " +
-            "Для связи они должны иметь одинаковый Index.\n" +
             "Возможные конструкции: (IF-ENDIF), (IF-ELSE-ENDIF), (IF-ELSEIF-ELSE-ENDIF), " +
             "(IF-ELSEIF-...-ELSEIF-ENDIF), (IF-ELSEIF-...-ELSEIF-ELSE-ENDIF)",
             MessageType.Info);
-
-        @event.Index = EditorGUILayout.IntField("Index:" , @event.Index);
 
         EditorGUILayout.LabelField("Тип операции:");
         @event.Type = (ConditionBranchingAction.ConditionType)EditorGUILayout.Popup((int)@event.Type, Enum.GetNames(@event.Type.GetType()));

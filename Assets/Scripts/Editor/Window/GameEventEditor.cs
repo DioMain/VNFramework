@@ -34,10 +34,23 @@ public class GameEventEditor : EditorWindow, IDisposable
         EditorGUILayout.BeginVertical();
         scroll = EditorGUILayout.BeginScrollView(scroll);
 
+        GUIStyle header = new GUIStyle(EditorStyles.boldLabel)
+        {
+            alignment = TextAnchor.MiddleLeft,
+            fontSize = 16,
+            stretchWidth = false,
+        };
+        GUIStyle body = new GUIStyle(EditorStyles.boldLabel)
+        {
+            alignment = TextAnchor.MiddleLeft,
+            stretchWidth = true
+        };
+
         for (int i = 0; i < eventPipeLine.Actions.Count; i++)
         {
             EditorGUILayout.BeginHorizontal(GUI.skin.box);
-            GUILayout.Label($"{eventPipeLine.Actions[i].Name}: {{{eventPipeLine.Actions[i].GetInfo()}}}");
+            GUILayout.Label($"{eventPipeLine.Actions[i].GetHeader()}:", header);
+            GUILayout.Label($"{{{eventPipeLine.Actions[i].GetInfo()}}}", body);
 
             EditorGUILayout.BeginHorizontal(GUILayout.Width(225));
 
@@ -95,13 +108,16 @@ public class GameEventEditor : EditorWindow, IDisposable
                 ManageBGMEditor.Initialize(GetWindow<ManageBGMEditor>(true, "BGM Manager", true), eventBase as ManageBGMAction);
                 break;
             case ChoiseAction:
-                ChoiseEditor.Initialize(GetWindow<ChoiseEditor>(true, "BGM Manager", true), eventBase as ChoiseAction);
+                ChoiseEditor.Initialize(GetWindow<ChoiseEditor>(true, "Choice", true), eventBase as ChoiseAction);
                 break;
             case ConditionBranchingAction:
                 ConditionBranchingEditor.Initialize(GetWindow<ConditionBranchingEditor>(true, "ConditionBranching", true), eventBase as ConditionBranchingAction);
                 break;
             case StopAction:
-                StopEvntEditor.Initialize(GetWindow<StopEvntEditor>(true, "StopEvent", true), eventBase as StopAction);
+                StopEvntEditor.Initialize(GetWindow<StopEvntEditor>(true, "Stop", true), eventBase as StopAction);
+                break;
+            case BackGroundAction:
+                BackGroundEditor.Initialize(GetWindow<BackGroundEditor>(true, "BackGround", true), eventBase as BackGroundAction);
                 break;
             default:
                 Debug.LogWarning("Unknown event!");

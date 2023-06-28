@@ -48,10 +48,15 @@ public class MessageAction : ActionBase
 
     public override string GetInfo()
     {
-        string onhide = CloseAfter ? ", Close box" : "";
+        string onhide = CloseAfter ? ", Çàêğûòü" : "";
 
         string outputed = Text.Replace("\n", "\n\t ");
 
-        return $"\n\t\"{outputed}\"\nCN: {CharName}, W: {Wait}, C: {Clear}{onhide}";
+        return $"\n\t\"{outputed}\"\nÈÌß: {CharName}, ÆÄÀÒÜ?: {Wait}, Î×ÈÑÒÈÒÜ?: {Clear}{onhide}";
+    }
+
+    public override string GetHeader()
+    {
+        return "Ñîîáùåíèå";
     }
 }

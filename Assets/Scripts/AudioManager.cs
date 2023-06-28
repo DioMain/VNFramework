@@ -10,8 +10,6 @@ public class AudioManager : MonoBehaviour
     private AudioSource bgsSource;
     [SerializeField]
     private AudioSource soundSource;
-    [SerializeField] 
-    private AudioSource battleSource;
 
     [SerializeField]
     private bool isFadingBGM = false;
@@ -27,15 +25,9 @@ public class AudioManager : MonoBehaviour
         get => bgsSource.volume;
         set => bgsSource.volume = value;
     }
-    public float BattleVolume
-    {
-        get => battleSource.volume;
-        set => battleSource.volume = value;
-    }
 
     public bool BGMPlaying => bgmSource.isPlaying;
     public bool BGSPlaying => bgsSource.isPlaying;
-    public bool BattlePlaying => battleSource.isPlaying;
 
     public void SetBGM(AudioClip clip, bool autoplay = false)
     {
@@ -54,20 +46,6 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     /// <param name="time">в секундах</param>
     public void FadeBGM(float time, bool stop = true) => StartCoroutine(FadeBGMCoroutine(time, stop));
-
-    public void SetBattle(AudioClip clip)
-    {
-        bool autoplay = battleSource.isPlaying;
-
-        StopBattle();
-
-        battleSource.clip = clip;
-
-        if (autoplay)
-            PlayBattle();
-    }
-    public void PlayBattle() => battleSource.Play();
-    public void StopBattle() => battleSource.Stop();
 
     public void SetBGS(AudioClip clip, bool autoplay = false)
     {

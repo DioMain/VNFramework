@@ -6,7 +6,7 @@ using UnityEngine;
 public class ChoiseManager : MonoBehaviour, IGameInited
 {
     private const float minHeight = 54f;
-    private const float oneHeight = 72f;
+    private const float oneHeight = 74f;
 
     [SerializeField]
     private ChoiseObject[] choiseObjects = new ChoiseObject[5];
@@ -74,36 +74,50 @@ public class ChoiseManager : MonoBehaviour, IGameInited
         {
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                if (choiseId >= countOfChoising - 1)
-                    choiseId = 0;
-                else
-                    choiseId++;
-
-                SetChoised(choiseId);
+                SetChoised(choiseId + 1);
             }
             else if (Input.GetKeyDown(KeyCode.UpArrow))
             {
-                if (choiseId <= 0)
-                    choiseId = countOfChoising - 1;
-                else
-                    choiseId--;
 
-                SetChoised(choiseId);
+
+                SetChoised(choiseId - 1);
             }
 
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                lastChoiseResult = choiseId;
-                isChosing = false;
+                Submit();
             }
         }
     }
 
-    private void SetChoised(int id)
+    public void Submit()
+    {
+        lastChoiseResult = choiseId;
+        isChosing = false;
+    }
+
+    public void SetChoised(int id)
+    {
+        if (id > countOfChoising - 1)
+            choiseId = 0;
+        else if (id < 0)
+            choiseId = countOfChoising - 1;
+        else
+            choiseId = id;
+
+        for (int i = 0; i < choiseObjects.Length; i++)
+        {
+            if (i == choiseId)
+                choiseObjects[i].IsChoised = true;
+            else
+                choiseObjects[i].IsChoised = false;
+        }
+    }
+    public void SetChoised(ChoiseObject choise)
     {
         for (int i = 0; i < choiseObjects.Length; i++)
         {
-            if (i == id)
+            if (choiseObjects[i] == choise)
                 choiseObjects[i].IsChoised = true;
             else
                 choiseObjects[i].IsChoised = false;

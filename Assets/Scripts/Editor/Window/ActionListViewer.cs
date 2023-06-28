@@ -41,6 +41,9 @@ public class ActionListViewer : EditorWindow, IDisposable
         if (GUILayout.Button("Управление переменной"))
             ManageVarEditor.Initialize(GetWindow<ManageVarEditor>(true, "Variable manager", true));
 
+        if (GUILayout.Button("Управление задним фоном"))
+            BackGroundEditor.Initialize(GetWindow<BackGroundEditor>(true, "BackGround", true));
+
         if (GUILayout.Button("Завершить выполнение"))
             StopEvntEditor.Initialize(GetWindow<StopEvntEditor>(true, "Stop", true));
 

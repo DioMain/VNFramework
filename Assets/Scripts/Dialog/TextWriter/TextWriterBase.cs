@@ -139,7 +139,7 @@ public abstract class TextWriterBase : MonoBehaviour, IGameInited
             {
                 buffer += cur;
 
-                if (Text[i + 1] != ' ')
+                if (i < Text.Length - 1 && Text[i + 1] != ' ')
                 {
                     OnSpecialSituation(buffer, TextWriterSS.Space);
 
@@ -251,7 +251,7 @@ public abstract class TextWriterBase : MonoBehaviour, IGameInited
         {
             isWaiting = true;
             OnWaitStart();
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z) || Input.GetMouseButtonDown(0));
             OnWaitEnd();
             isWaiting = false;
         }

@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public class ChoiseObject : MonoBehaviour
 {
     [SerializeField]
+    private ChoiseManager manager;
+
+    [SerializeField]
     private Animator m_Animator;
     [SerializeField]
     private TextMeshProUGUI textMesh;

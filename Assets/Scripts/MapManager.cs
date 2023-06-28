@@ -11,6 +11,7 @@ public class MapManager : MonoBehaviour
 
     public DialogManager Dialog;
     public GlobalEventObject Event;
+    public BackgroundImageManager BackgroundImage;
 
     public void Start()
     {

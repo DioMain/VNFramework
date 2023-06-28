@@ -72,12 +72,17 @@ public class ManageBGMAction : ActionBase
     {
         return Type switch
         {
-            ManageType.Set => $"SET: {{VOL: {Volume}, CLIP: {Clip.name}, AUTOPLAY: {Autoplay}}}",
-            ManageType.Play => $"PLAY",
-            ManageType.Stop => $"STOP",
-            ManageType.Pause => $"PAUSE",
-            ManageType.Fate => $"FATE: {{FATETIME: {FateTime}s, ISPAUSE: {IsPause}, WAIT: {WaitFate}}}",
+            ManageType.Set => $"ÓÑÒÀÍÎÂÈÒÜ: {{ÃĞÎÌÊÎÑÒÜ: {Volume}, ÀÈÄÈÎ: {Clip.name}, ÀÂÒÎÇÀÏÓÑÊ: {Autoplay}}}",
+            ManageType.Play => $"ÍÀ×ÀÒÜ",
+            ManageType.Stop => $"ÎÑÒÀÍÎÂÈÒÜ",
+            ManageType.Pause => $"ÏÀÓÇÀ",
+            ManageType.Fate => $"ÇÀÒÓÕÀÍÈÅ: {{ÂĞÅÌß ÇÀÒÓÕÀÍÈß: {FateTime}s, ÏÀÓÇÀ?: {IsPause}, ÆÄÀÒÜ?: {WaitFate}}}",
             _ => "NULL!",
         };
+    }
+
+    public override string GetHeader()
+    {
+        return "Óñòàíîâêà BGM";
     }
 }

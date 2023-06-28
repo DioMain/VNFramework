@@ -21,6 +21,11 @@ public abstract class ActionBase : ICustomEvent
     public abstract IEnumerator EventCorotine();
 
     public abstract string GetInfo();
+
+    public virtual string GetHeader()
+    {
+        return Name;
+    }
 }
 
 public interface ICustomEvent

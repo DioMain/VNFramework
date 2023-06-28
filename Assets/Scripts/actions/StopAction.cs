@@ -19,6 +19,11 @@ public class StopAction : ActionBase
 
     public override string GetInfo()
     {
-        return "STOP";
+        return "";
+    }
+
+    public override string GetHeader()
+    {
+        return "Остановить выполнение";
     }
 }

@@ -37,7 +37,7 @@ public abstract class ActionEditorWindowBase<T> : EditorWindow, IDisposable
         EditorGUILayout.BeginVertical();
         scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
 
-        GUILayout.Label(titleContent.text, header);
+        GUILayout.Label(@event.GetHeader(), header);
 
         EditorGUILayout.BeginVertical(GUI.skin.box);
         OnDraw();

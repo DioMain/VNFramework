@@ -81,20 +81,25 @@ public class ManageVarsAction : ActionBase
         {
             case VarType.Float:
                 if (OType == OperationType.Equal)
-                    return $"Float, KEY: {Key} to VALUE: {FloatValue}";
+                    return $"Float, ÊËŞ×: {Key} â ÇÍÀ×ÅÍÈÅ: {FloatValue}";
                 else
-                    return $"Float, KEY: {Key} add VALUE: {FloatValue}";
+                    return $"Float, ÊËŞ×: {Key} äîáàâèòü ÇÍÀ×ÅÍÈÅ: {FloatValue}";
             case VarType.String:
-                return $"String, KEY: {Key} to VALUE: {StringValue}";
+                return $"String, ÊËŞ×: {Key} â ÇÍÀ×ÅÍÈÅ: {StringValue}";
             case VarType.Bool:
-                return $"Bool, KEY: {Key} to VALUE: {BoolValue}";
+                return $"Bool, ÊËŞ×: {Key} â ÇÍÀ×ÅÍÈÅ: {BoolValue}";
             case VarType.Int:
                 if (OType == OperationType.Equal)
-                    return $"Int, KEY: {Key} to VALUE: {IntValue}";
+                    return $"Int, ÊËŞ×: {Key} â ÇÍÀ×ÅÍÈÅ: {IntValue}";
                 else
-                    return $"int, KEY: {Key} add VALUE: {IntValue}";
+                    return $"int, ÊËŞ×: {Key} äîáàâèòü ÇÍÀ×ÅÍÈÅ: {IntValue}";
             default:
                 return "NULL";
         }
+    }
+
+    public override string GetHeader()
+    {
+        return "Ïåğåìåííàÿ";
     }
 }

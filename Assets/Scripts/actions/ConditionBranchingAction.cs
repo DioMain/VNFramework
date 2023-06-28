@@ -14,7 +14,7 @@ public class ConditionBranchingAction : ActionBase
 
     public ConditionType Type;
 
-    public int Index;
+    //public int Index;
 
     public bool CompareVariable, CompareChoise;
 
@@ -35,7 +35,6 @@ public class ConditionBranchingAction : ActionBase
     public ConditionBranchingAction() : base("ConditionBranching")
     {
         IsTrue = false;
-        Index = 0;
         Type = ConditionType.If;
         CompareVariable = false; CompareChoise = false;
         compareVariableResult = false; compareChoiseResult = false;
@@ -86,6 +85,46 @@ public class ConditionBranchingAction : ActionBase
                  ((CompareChoise && compareChoiseResult) || !CompareChoise);
     }
 
+    private void FindIndex(bool onlyEndIf = false)
+    {
+        Stack<ConditionBranchingAction> ifStack = new Stack<ConditionBranchingAction>();
+
+        bool isFinded = false;
+        for (int i = MainEvent.Index + 1; i < MainEvent.Actions.Count; i++)
+        {
+            if (MainEvent.Actions[i] is ConditionBranchingAction evn)
+            {
+                if (evn.Type == ConditionType.If)
+                    ifStack.Push(evn);
+                else
+                {
+                    if (ifStack.Count > 0)
+                    {
+                        if (evn.Type == ConditionType.EndIf)
+                            ifStack.Pop();
+                    }
+                    else
+                    {
+                        bool part0 = (evn.Type == ConditionType.EndIf || evn.Type == ConditionType.Else
+                                                    || evn.Type == ConditionType.ElseIf) && !onlyEndIf;
+
+                        bool part1 = evn.Type == ConditionType.EndIf && onlyEndIf;
+
+                        if (part0 || part1)
+                        {
+                            MainEvent.SetIndex(i);
+                            isFinded = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        if (!isFinded)
+            Debug.LogError("Конец условия не найден!");
+    }
+
     public override IEnumerator EventCorotine()
     {
         if (Type == ConditionType.If)
@@ -95,22 +134,7 @@ public class ConditionBranchingAction : ActionBase
             IsTrue = Check();
 
             if (!IsTrue)
-            {
-                for (int i = MainEvent.Index + 1; i < MainEvent.Actions.Count; i++)
-                {
-                    if (MainEvent.Actions[i] is ConditionBranchingAction evn)
-                    {
-                        if (evn.Index == Index &&
-                            (evn.Type == ConditionType.EndIf
-                            || evn.Type == ConditionType.Else
-                            || evn.Type == ConditionType.ElseIf))
-                        {
-                            MainEvent.SetIndex(i);
-                            break;
-                        }
-                    }
-                }
-            }
+                FindIndex();
         }
         else if (Type == ConditionType.ElseIf)
         {
@@ -119,22 +143,7 @@ public class ConditionBranchingAction : ActionBase
             IsTrue = Check() && ifevent.IsTrue == false;
 
             if (!IsTrue)
-            {
-                for (int i = MainEvent.Index + 1; i < MainEvent.Actions.Count; i++)
-                {
-                    if (MainEvent.Actions[i] is ConditionBranchingAction evn)
-                    {
-                        if (evn.Index == Index &&
-                            (evn.Type == ConditionType.EndIf
-                            || evn.Type == ConditionType.Else
-                            || evn.Type == ConditionType.ElseIf))
-                        {
-                            MainEvent.SetIndex(i);
-                            break;
-                        }
-                    }
-                }
-            }
+                FindIndex();
             else
                 MainEvent.ConditionEvents.Add(this);
         }
@@ -143,24 +152,19 @@ public class ConditionBranchingAction : ActionBase
             ConditionBranchingAction ifevent = MainEvent.ConditionEvents.Last();
 
             if (ifevent.IsTrue == true)
-            {
-                for (int i = MainEvent.Index + 1; i < MainEvent.Actions.Count; i++)
-                {
-                    if (MainEvent.Actions[i] is ConditionBranchingAction evn)
-                    {
-                        if (evn.Index == Index &&
-                            (evn.Type == ConditionType.EndIf))
-                        {
-                            MainEvent.SetIndex(i);
-                            break;
-                        }
-                    }
-                }
-            }
+                FindIndex(true);
         }
         else if (Type == ConditionType.EndIf)
         {
-            MainEvent.ConditionEvents.RemoveAll(i => i.Index == Index);
+            while (MainEvent.ConditionEvents.Count > 0 && MainEvent.ConditionEvents.Last().Type == ConditionType.ElseIf)
+            {
+                MainEvent.ConditionEvents.Remove(MainEvent.ConditionEvents.Last());
+            }
+
+            if (MainEvent.ConditionEvents.Count > 0)
+                MainEvent.ConditionEvents.Remove(MainEvent.ConditionEvents.Last());
+            else
+                Debug.LogWarning("Не найдено условие!");
         }
 
         yield return null;
@@ -168,9 +172,26 @@ public class ConditionBranchingAction : ActionBase
 
     public override string GetInfo()
     {
-        string isVar = CompareVariable ? ", CompareVariable" : "";
-        string isChoise = CompareChoise ? ", CompareChoise" : "";
+        string isVar = CompareVariable ? $", По переменной" : "";
+        string isChoise = CompareChoise ? $", Выбор == {ChoiseExpected}" : "";
 
-        return $"TYPE: {Type}, INDEX: {Index}{isVar}{isChoise}";
+        return $"ТИП: {Type}{isVar}{isChoise}";
+    }
+
+    public override string GetHeader()
+    {
+        switch (Type)
+        {
+            case ConditionType.If:
+                return $"    Если";
+            case ConditionType.ElseIf:
+                return $"    Иначе если ";
+            case ConditionType.Else:
+                return $"    Иначе";
+            case ConditionType.EndIf:
+                return $"    Конец условия";
+            default:
+                return "IF NULL";
+        }
     }
 }

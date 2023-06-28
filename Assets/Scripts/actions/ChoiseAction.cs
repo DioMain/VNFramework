@@ -36,11 +36,16 @@ public class ChoiseAction : ActionBase
         foreach (string choice in Choises)
         {
             if (!string.IsNullOrEmpty(choice))
-                str += $"CHOICE {index}: {choice}; ";
+                str += $"Выбор {index}: {choice}; ";
 
             index++;
         }
 
         return str;
+    }
+
+    public override string GetHeader()
+    {
+        return "Выбор";
     }
 }
