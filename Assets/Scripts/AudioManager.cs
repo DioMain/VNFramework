@@ -59,11 +59,12 @@ public class AudioManager : MonoBehaviour
     public void PlayBGS() => bgsSource.Play();
     public void StopBGS() => bgsSource.Stop();
 
-    public void PlaySound(AudioClip clip)
+    public void PlaySound(AudioClip clip, float volume = 1)
     {
         if (soundSource.isPlaying)
             soundSource.Stop();
 
+        soundSource.volume = volume;
         soundSource.clip = clip;
 
         soundSource.Play();

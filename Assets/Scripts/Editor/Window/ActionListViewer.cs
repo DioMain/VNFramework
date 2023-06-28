@@ -35,14 +35,23 @@ public class ActionListViewer : EditorWindow, IDisposable
         if (GUILayout.Button("Управление условием"))
             ConditionBranchingEditor.Initialize(GetWindow<ConditionBranchingEditor>(true, "ConditionBranching", false));
 
-        if (GUILayout.Button("Управление БГМ"))
-            ManageBGMEditor.Initialize(GetWindow<ManageBGMEditor>(true, "BGM Manage", true));
+        if (GUILayout.Button("Управление BGM"))
+            ManageBGMEditor.Initialize(GetWindow<ManageBGMEditor>(true, "Manage BGM", true));
+
+        if (GUILayout.Button("Управление BGS"))
+            ManageBGSEditor.Initialize(GetWindow<ManageBGSEditor>(true, "Manage BGS", true));
+
+        if (GUILayout.Button("Запуск SE"))
+            PlaySEEditor.Initialize(GetWindow<PlaySEEditor>(true, "Play SE", true));
 
         if (GUILayout.Button("Управление переменной"))
             ManageVarEditor.Initialize(GetWindow<ManageVarEditor>(true, "Variable manager", true));
 
         if (GUILayout.Button("Управление задним фоном"))
             BackGroundEditor.Initialize(GetWindow<BackGroundEditor>(true, "BackGround", true));
+
+        if (GUILayout.Button("Ждать"))
+            WaitEditor.Initialize(GetWindow<WaitEditor>(true, "Wait", true));
 
         if (GUILayout.Button("Завершить выполнение"))
             StopEvntEditor.Initialize(GetWindow<StopEvntEditor>(true, "Stop", true));

@@ -83,6 +83,6 @@ public class ManageBGMAction : ActionBase
 
     public override string GetHeader()
     {
-        return "Установка BGM";
+        return "Управление BGM";
     }
 }

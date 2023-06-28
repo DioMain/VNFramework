@@ -119,6 +119,15 @@ public class GameEventEditor : EditorWindow, IDisposable
             case BackGroundAction:
                 BackGroundEditor.Initialize(GetWindow<BackGroundEditor>(true, "BackGround", true), eventBase as BackGroundAction);
                 break;
+            case WaitAction:
+                WaitEditor.Initialize(GetWindow<WaitEditor>(true, "Wait", true), eventBase as WaitAction);
+                break;
+            case PlaySEAction:
+                PlaySEEditor.Initialize(GetWindow<PlaySEEditor>(true, "Play SE", true), eventBase as PlaySEAction);
+                break;
+            case ManagerBGSAction:
+                ManageBGSEditor.Initialize(GetWindow<ManageBGSEditor>(true, "Manage BGS", true), eventBase as ManagerBGSAction);
+                break;
             default:
                 Debug.LogWarning("Unknown event!");
                 break;

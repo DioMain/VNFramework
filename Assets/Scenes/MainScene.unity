@@ -346,9 +346,11 @@ MonoBehaviour:
   event:
     Actions:
     - rid: 4743668740364173333
+    - rid: 4743668740364173338
     - rid: 4743668740364173326
     - rid: 4743668740364173317
     - rid: 4743668740364173318
+    - rid: 4743668740364173340
     - rid: 4743668740364173322
     - rid: 4743668740364173328
     - rid: 4743668740364173327
@@ -361,6 +363,9 @@ MonoBehaviour:
     - rid: 4743668740364173320
     - rid: 4743668740364173324
     - rid: 4743668740364173321
+    - rid: 4743668740364173342
+    - rid: 4743668740364173341
+    - rid: 4743668740364173343
     - rid: 4743668740364173325
     - rid: 4743668740364173334
     ConditionEvents: []
@@ -590,6 +595,55 @@ MonoBehaviour:
         WithFade: 1
         FadeTime: 1
         Image: {fileID: 21300000, guid: 96fef27716ead1b49bd12be21a78ade5, type: 3}
+    - rid: 4743668740364173338
+      type: {class: ManageBGMAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageBGM
+        Type: 0
+        Volume: 1
+        Clip: {fileID: 8300000, guid: 1c4bf9133dcaeab4a84a5ec4b5aaaf9c, type: 3}
+        Autoplay: 1
+        FateTime: 1
+        IsPause: 0
+        WaitFate: 1
+    - rid: 4743668740364173340
+      type: {class: ManagerBGSAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManagerBGS
+        Operation: 0
+        Clip: {fileID: 8300000, guid: 0cbd81f69726fab4fa3500303dcd5cbe, type: 3}
+        AutoPlay: 1
+        Volume: 0.35
+    - rid: 4743668740364173341
+      type: {class: ManageBGMAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageBGM
+        Type: 2
+        Volume: 1
+        Clip: {fileID: 0}
+        Autoplay: 1
+        FateTime: 1
+        IsPause: 0
+        WaitFate: 1
+    - rid: 4743668740364173342
+      type: {class: ManagerBGSAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManagerBGS
+        Operation: 1
+        Clip: {fileID: 0}
+        AutoPlay: 1
+        Volume: 1
+    - rid: 4743668740364173343
+      type: {class: PlaySEAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: PlaySE
+        Clip: {fileID: 8300000, guid: c14d299abf662424ebb1f4b73f8eba64, type: 3}
+        Volume: 0.75
 --- !u!1 &145334455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2885,7 +2939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.22424956, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.22424962, y: -0.000015258789}
   m_SizeDelta: {x: 8.570007, y: -6}
   m_Pivot: {x: -0.00000013783574, y: 0.5}
 --- !u!114 &1513866693
