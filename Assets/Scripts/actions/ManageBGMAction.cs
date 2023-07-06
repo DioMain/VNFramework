@@ -72,7 +72,7 @@ public class ManageBGMAction : ActionBase
     {
         return Type switch
         {
-            ManageType.Set => $"сярюмнбхрэ: {{цпнлйнярэ: {Volume}, юхдхн: {Clip.name}, юбрнгюосяй: {Autoplay}}}",
+            ManageType.Set => $"сярюмнбхрэ: {{цпнлйнярэ: {Volume}, юсдхн: {Clip.name}, юбрнгюосяй: {Autoplay}}}",
             ManageType.Play => $"мювюрэ",
             ManageType.Stop => $"нярюмнбхрэ",
             ManageType.Pause => $"оюсгю",

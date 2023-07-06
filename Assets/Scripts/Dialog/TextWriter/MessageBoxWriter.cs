@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MessageBoxWriter : TextWriterBase
@@ -10,10 +12,22 @@ public class MessageBoxWriter : TextWriterBase
     [SerializeField]
     private GameObject arrow;
 
+    public bool AutoSkip = false;
+
+    public bool IsEntered = false;
+
     public bool IsShow
     {
         get => container.activeSelf;
         set => container.SetActive(value);
+    }
+
+    public event Action<bool> OnAutoSkip;
+
+    public void SetAutoSkip()
+    {
+        AutoSkip = !AutoSkip;
+        OnAutoSkip?.Invoke(AutoSkip);
     }
 
     public override void Init()
@@ -24,30 +38,29 @@ public class MessageBoxWriter : TextWriterBase
     public override void OnWaitStart()
     {
         arrow.SetActive(true);
-        //asd
     }
     public override void OnWaitEnd()
     {
         arrow.SetActive(false);
     }
 
-    public override void OnEveryLetter(char letter)
+    public override bool SkipCanExecute()
     {
-
+        return AutoSkip;
     }
 
-    public override void OnSpecialSituation(string text, TextWriterSS situation)
+    public override bool WaitCondition()
     {
-        
+        return Input.GetKeyDown(KeyCode.Z) || (IsEntered && Input.GetMouseButtonDown(0));
     }
 
-    public override void OnWriteEnd()
+    public override bool SkipCondition()
     {
-
+        return Input.GetKeyDown(KeyCode.C) || (IsEntered && Input.GetMouseButtonDown(1));
     }
 
-    public override void OnWriteStart()
+    public void SetMouseEnter(bool enter)
     {
-        
+        IsEntered = enter;
     }
 }

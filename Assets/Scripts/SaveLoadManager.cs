@@ -8,7 +8,7 @@ public class SaveLoadManager : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(JsonUtility.ToJson(Clip.GetInstanceID()));
+        //Debug.Log(JsonUtility.ToJson(Clip.GetInstanceID()));
 
         
     }

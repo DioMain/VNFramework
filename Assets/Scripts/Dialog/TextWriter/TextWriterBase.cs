@@ -35,12 +35,17 @@ public abstract class TextWriterBase : MonoBehaviour, IGameInited
     private Coroutine writeCoroutine = null;
     public bool IsWrite => writeCoroutine != null;
     
-    public abstract void OnSpecialSituation(string text, TextWriterSS situation);
-    public abstract void OnEveryLetter(char letter);
-    public abstract void OnWaitStart();
-    public abstract void OnWaitEnd();
-    public abstract void OnWriteStart();
-    public abstract void OnWriteEnd();
+    public virtual void OnSpecialSituation(string text, TextWriterSS situation) { }
+    public virtual void OnEveryLetter(char letter) { }
+    public virtual void OnWaitStart() { }
+    public virtual void OnWaitEnd() { }
+    public virtual void OnWriteStart() { }
+    public virtual void OnWriteEnd() { }
+
+    public virtual bool SkipCanExecute() => false;
+
+    public virtual bool WaitCondition() => false;
+    public virtual bool SkipCondition() => false;
 
     public void Write(string text, bool clear = true, bool wait = true, float speed = 0)
     {
@@ -188,7 +193,8 @@ public abstract class TextWriterBase : MonoBehaviour, IGameInited
                     case 'p':
                         isWaiting = true;
                         OnWaitStart();
-                        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+                        yield return new WaitUntil(() => (WaitCondition() || SkipCanExecute())
+                                                && !MapManager.Instance.Pause);
                         OnWaitEnd();
                         isWaiting = false;
                         isSkiped = false;
@@ -251,7 +257,8 @@ public abstract class TextWriterBase : MonoBehaviour, IGameInited
         {
             isWaiting = true;
             OnWaitStart();
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z) || Input.GetMouseButtonDown(0));
+            yield return new WaitUntil(() => (WaitCondition() || SkipCanExecute()) 
+                                                && !MapManager.Instance.Pause);
             OnWaitEnd();
             isWaiting = false;
         }
@@ -268,7 +275,7 @@ public abstract class TextWriterBase : MonoBehaviour, IGameInited
         {
             yield return null;
 
-            if (Input.GetKeyDown(KeyCode.C))
+            if (SkipCondition() || SkipCanExecute())
                 isSkiped = true;
         }
     }

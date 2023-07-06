@@ -33,7 +33,10 @@ public class ActionListViewer : EditorWindow, IDisposable
             ChoiseEditor.Initialize(GetWindow<ChoiseEditor>(true, "Choise", true));
 
         if (GUILayout.Button("”правление условием"))
-            ConditionBranchingEditor.Initialize(GetWindow<ConditionBranchingEditor>(true, "ConditionBranching", false));
+            ConditionBranchingEditor.Initialize(GetWindow<ConditionBranchingEditor>(true, "Condition branching", false));
+
+        if (GUILayout.Button("”правление персонажем"))
+            CharacterManagmentEditor.Initialize(GetWindow<CharacterManagmentEditor>(true, "Character managment", true));
 
         if (GUILayout.Button("”правление BGM"))
             ManageBGMEditor.Initialize(GetWindow<ManageBGMEditor>(true, "Manage BGM", true));

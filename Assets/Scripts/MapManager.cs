@@ -12,6 +12,9 @@ public class MapManager : MonoBehaviour
     public DialogManager Dialog;
     public GlobalEventObject Event;
     public BackgroundImageManager BackgroundImage;
+    public CharactersManager Characters;
+
+    public bool Pause = false;
 
     public void Start()
     {

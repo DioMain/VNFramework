@@ -128,6 +128,9 @@ public class GameEventEditor : EditorWindow, IDisposable
             case ManagerBGSAction:
                 ManageBGSEditor.Initialize(GetWindow<ManageBGSEditor>(true, "Manage BGS", true), eventBase as ManagerBGSAction);
                 break;
+            case CharacterManagmentAction:
+                CharacterManagmentEditor.Initialize(GetWindow<CharacterManagmentEditor>(true, "Character managment", true), eventBase as CharacterManagmentAction);
+                break;
             default:
                 Debug.LogWarning("Unknown event!");
                 break;
