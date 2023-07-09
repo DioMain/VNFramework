@@ -12,10 +12,13 @@ public class BackgroundImageManager : MonoBehaviour
 
     [SerializeField]
     private Sprite Black;
+    public Sprite DefaultImage => Black;
 
     [SerializeField]
     private bool isFading;
     public bool IsFading => isFading;
+
+    public Sprite CurrentImage => image.sprite;
 
     private void Start()
     {

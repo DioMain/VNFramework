@@ -20,6 +20,8 @@ public class CharacterObject : MonoBehaviour
     public SelectionState State => state;
 
     public Sprite OwnSprite => _image.sprite;
+    public Vector2 Position => transform.position;
+    public Vector2 Size => transform.localScale;
 
     public void Show()
     {

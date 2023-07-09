@@ -26,9 +26,11 @@ public class SlotInfo
 
     public string BGMName;
     public float BGMVolume;
+    public bool IsBGMPlay;
 
     public string BGSName;
     public float BGSVolume;
+    public bool IsBGSPlay;
 
     public List<string> IntKeys;
     public List<string> FloatKeys;
@@ -43,4 +45,8 @@ public class SlotInfo
     public List<CharacterInfo> Characters;
 
     public List<HistoryElementInfo> HistoryElements;
+
+    // META
+
+    public bool savedInMA;
 }

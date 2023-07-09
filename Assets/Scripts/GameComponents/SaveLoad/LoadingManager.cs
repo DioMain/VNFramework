@@ -54,6 +54,8 @@ public class LoadingManager : MonoBehaviour
 
         AsyncOperation loadasync = SceneManager.LoadSceneAsync(1);
 
+        loadasync.allowSceneActivation = true;
+
         while (loadasync.isDone)
         {
             loadingText.text = $"Загрузка {loadasync.progress * 100}%";
@@ -61,15 +63,14 @@ public class LoadingManager : MonoBehaviour
             yield return null;
         }
 
-
         loadingText.text = $"Почти готово!";
 
         yield return new WaitForSeconds(1f);
 
-        if (usingSlot > -1)
-        {
+        GameManager.Instance.SaveLoad.GameCleanup();
 
-        }
+        if (usingSlot > -1)
+            GameManager.Instance.SaveLoad.ApplySlot(usingSlot);
 
         yield return new WaitForSeconds(1f);
 

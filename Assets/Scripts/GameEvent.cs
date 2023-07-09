@@ -52,7 +52,7 @@ public class GameEvent
     protected void InvokeOnStart() => OnStart?.Invoke(this);
     protected void InvokeOnEnd() => OnEnd?.Invoke(this);
 
-    public void SetIndex(int index)
+    public void SetIndex(int index, bool freeStep = true)
     {
         if (index < 0 || index >= Actions.Count)
         {
@@ -61,7 +61,8 @@ public class GameEvent
         }
 
         this.index = index;
-        indexChanged = true;
+
+        indexChanged = freeStep;
     }
 
     protected IEnumerator PipeLine()
@@ -87,7 +88,7 @@ public class GameEvent
             i++;
         }
 
-        index = 0;
+        //index = 0;
         while (index < Actions.Count)
         {
             yield return DispathObject.StartCoroutine(Actions[index].EventCorotine());

@@ -30,6 +30,9 @@ public class AudioManager : MonoBehaviour
     public bool BGMPlaying => bgmSource.isPlaying;
     public bool BGSPlaying => bgsSource.isPlaying;
 
+    public AudioClip BGMClip => bgmSource.clip;
+    public AudioClip BGSClip => bgsSource.clip;
+
     public void SetBGM(AudioClip clip, bool autoplay = false)
     {
         StopBGM();

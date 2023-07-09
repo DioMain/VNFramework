@@ -30,7 +30,15 @@ public class SaveSlot : MonoBehaviour
 
     public void TargerButton()
     {
-
+        if (localmode)
+        {
+            GameManager.Instance.SaveLoad.SaveSlot(slotID);
+            SlotUpdate();
+        }
+        else
+        {
+            GameManager.Instance.Loading.LoadGameScene(slotID);
+        }    
     }
 
     public void DeleteButton()

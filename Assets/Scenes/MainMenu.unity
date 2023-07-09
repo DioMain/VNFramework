@@ -488,7 +488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dev build 4
+  m_text: Dev build 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: be9315658a783af49835b5cdbb9add71, type: 2}
   m_sharedMaterial: {fileID: -7060671000854719766, guid: be9315658a783af49835b5cdbb9add71, type: 2}
@@ -1911,6 +1911,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1532509881636634661, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1532509881636634661, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1834181271037308038, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1918,6 +1926,50 @@ PrefabInstance:
     - target: {fileID: 3308721402814193595, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
       propertyPath: m_Name
       value: SaveLoadCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522680306722960270, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522680306722960270, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016498285667437972, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016498285667437972, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016498285667437972, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016498285667437972, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291744821705865484, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291744821705865484, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265223664137589262, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265223664137589262, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265223664137589262, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6245061968636153677, guid: f5cc5038f7b05234997188f5c45578fc, type: 3}
       propertyPath: m_Pivot.x

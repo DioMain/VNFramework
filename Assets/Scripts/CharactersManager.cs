@@ -12,6 +12,7 @@ public class CharactersManager : MonoBehaviour
 
     [SerializeReference]
     private Dictionary<string, CharacterObject> characters = new Dictionary<string, CharacterObject>();
+    public Dictionary<string, CharacterObject> Characters => characters;
 
     public void AddCharacter(string key, Sprite sprite, Vector2 position, Vector2 size, bool show = true)
     {
@@ -57,6 +58,16 @@ public class CharactersManager : MonoBehaviour
         }
 
         characters[key].SetByState(state);
+    }
+
+    public void Cleanup()
+    {
+        foreach (var item in characters.Values)
+        {
+            Destroy(item.gameObject);
+        }
+
+        characters.Clear();
     }
 
     private IEnumerator DeleteCoroutine(string key, bool instance)
