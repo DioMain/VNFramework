@@ -66,6 +66,14 @@ public class GameEvent
 
     protected IEnumerator PipeLine()
     {
+#if UNITY_EDITOR
+        if (!MapManager.Instance.IngnoreLoading)
+#endif
+        {
+            yield return new WaitWhile(() => !LoadingManager.GameIsReady);
+        }
+        
+
         OnStart?.Invoke(this);
 
         yield return null;

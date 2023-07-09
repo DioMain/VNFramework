@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioSource soundSource;
 
+
     [SerializeField]
     private bool isFadingBGM = false;
     public bool IsFadingBGM => isFadingBGM;
@@ -68,6 +69,13 @@ public class AudioManager : MonoBehaviour
         soundSource.clip = clip;
 
         soundSource.Play();
+    }
+
+    public void ApplyConfig()
+    {
+        bgmSource.outputAudioMixerGroup.audioMixer.SetFloat("Vol", GameManager.Instance.GameConfig.BGMVolume < -40 ? -80 : GameManager.Instance.GameConfig.BGMVolume);
+        bgsSource.outputAudioMixerGroup.audioMixer.SetFloat("Vol", GameManager.Instance.GameConfig.BGSVolume < -40 ? -80 : GameManager.Instance.GameConfig.BGSVolume);
+        soundSource.outputAudioMixerGroup.audioMixer.SetFloat("Vol", GameManager.Instance.GameConfig.SEVolume < -40 ? -80 : GameManager.Instance.GameConfig.SEVolume);
     }
 
     private IEnumerator FadeBGMCoroutine(float time, bool stop)

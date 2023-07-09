@@ -26,6 +26,22 @@ public class ChoiseAction : ActionBase
         yield return new WaitWhile(() => MapManager.Instance.Dialog.IsChoise);
 
         MapManager.Instance.Dialog.HideChoise();
+
+        string desc = "";
+        for (int i = 0; i < list.Count; i++)
+        {
+            desc += $"{i + 1}. {list[i]}";
+
+            if (i < Choises.Length - 1)
+                    desc += ", ";
+        }
+
+        MapManager.Instance.History.AddHistoryInfo(new HistoryElementInfo()
+        {
+            Tittle = "Выбор",
+            Description = desc,
+            Body = $"Выбрано: {list[MapManager.Instance.Dialog.ChoiseResult]}"
+        });
     }
 
     public override string GetInfo()

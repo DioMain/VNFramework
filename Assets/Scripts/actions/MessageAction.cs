@@ -40,6 +40,17 @@ public class MessageAction : ActionBase
 
         MapManager.Instance.Dialog.ShowMessageBox(info);
 
+        if (!string.IsNullOrEmpty(info.Text))
+        {
+            MapManager.Instance.History.AddHistoryInfo(new HistoryElementInfo()
+            {
+                Tittle = "Сообщение",
+                Description = info.Name,
+                Body = info.Text
+            });
+        }
+        
+
         yield return new WaitWhile(() => MapManager.Instance.Dialog.IsUsing);
 
         if (CloseAfter)
