@@ -54,6 +54,8 @@ public class MessageAction : ActionBase
 
         if (CloseAfter)
             MapManager.Instance.Dialog.HideBox();
+
+        //asd
     }
 
     public override string GetInfo()
