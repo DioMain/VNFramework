@@ -59,8 +59,8 @@ public class ActionListViewer : EditorWindow, IDisposable
         if (GUILayout.Button("Ждать"))
             WaitEditor.Initialize(GetWindow<WaitEditor>(true, "Wait", true));
 
-        if (GUILayout.Button("Завершить выполнение"))
-            StopEvntEditor.Initialize(GetWindow<StopEvntEditor>(true, "Stop", true));
+        if (GUILayout.Button("Завершить игру"))
+            EndGameEditor.Initialize(GetWindow<EndGameEditor>(true, "Game end", true));
 
         EditorGUILayout.EndScrollView();
         EditorGUILayout.EndVertical();

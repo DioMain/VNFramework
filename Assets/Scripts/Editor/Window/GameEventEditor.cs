@@ -113,8 +113,8 @@ public class GameEventEditor : EditorWindow, IDisposable
             case ConditionBranchingAction:
                 ConditionBranchingEditor.Initialize(GetWindow<ConditionBranchingEditor>(true, "ConditionBranching", true), eventBase as ConditionBranchingAction);
                 break;
-            case StopAction:
-                StopEvntEditor.Initialize(GetWindow<StopEvntEditor>(true, "Stop", true), eventBase as StopAction);
+            case EndAction:
+                EndGameEditor.Initialize(GetWindow<EndGameEditor>(true, "Game end", true), eventBase as EndAction);
                 break;
             case BackGroundAction:
                 BackGroundEditor.Initialize(GetWindow<BackGroundEditor>(true, "BackGround", true), eventBase as BackGroundAction);

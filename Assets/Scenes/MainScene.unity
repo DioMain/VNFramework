@@ -633,6 +633,7 @@ MonoBehaviour:
     - rid: 7617272756454817792
     - rid: 7617272756454817793
     - rid: 7617272760732221440
+    - rid: 7617272761645531136
     ConditionEvents: []
     DispathObject: {fileID: 132164054}
     DispathScriptable: {fileID: 0}
@@ -938,6 +939,11 @@ MonoBehaviour:
         ActionIndex: -1
         Name: CollectAchievement
         AchievementTag: ha
+    - rid: 7617272761645531136
+      type: {class: EndAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: End
     - rid: 8659942935163568154
       type: {class: MessageAction, ns: , asm: Assembly-CSharp}
       data:
@@ -6247,7 +6253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.22425166, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.22425167, y: -0.000015258789}
   m_SizeDelta: {x: 8.570007, y: -6}
   m_Pivot: {x: -0.00000013783574, y: 0.5}
 --- !u!114 &1513866693
