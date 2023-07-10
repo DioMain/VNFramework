@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     {
         Audio.ApplyConfig();
 
-        RefreshRate refresh = Screen.resolutions.Where(i => i.refreshRateRatio.value == GameConfig.RefreshRate).ToArray()[0].refreshRateRatio;
+        RefreshRate refresh = Screen.resolutions.Where(i => Mathf.RoundToInt((float)i.refreshRateRatio.value) == GameConfig.RefreshRate).ToArray()[0].refreshRateRatio;
 
         Screen.SetResolution(GameConfig.Resolution.x, GameConfig.Resolution.y, 
                                 GameConfig.IsFullScreen ? FullScreenMode.FullScreenWindow : FullScreenMode.Windowed, 

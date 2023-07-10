@@ -320,7 +320,7 @@ public class SaveLoadManager : MonoBehaviour
             BGSVolume = 2,
             SEVolume = 2,
             IsFullScreen = true,
-            RefreshRate = max.refreshRateRatio.value,
+            RefreshRate = Mathf.RoundToInt((float)max.refreshRateRatio.value),
             Resolution = new Vector2Int(max.width, max.height)
         };
 
@@ -371,5 +371,5 @@ public class ConfigInfo
     public bool IsFullScreen;
 
     public Vector2Int Resolution;
-    public double RefreshRate;
+    public int RefreshRate;
 }
