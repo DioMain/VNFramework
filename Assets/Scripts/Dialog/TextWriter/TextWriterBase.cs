@@ -12,6 +12,8 @@ public abstract class TextWriterBase : MonoBehaviour, IGameInited
     [SerializeField]
     protected TextMeshProUGUI UITextMeshPro;
 
+    public string ResultText => UITextMeshPro.text;
+
     [TextArea]
     [Multiline(5)]
     public string Text;

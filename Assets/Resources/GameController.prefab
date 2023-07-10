@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 4637954742228232162}
   - component: {fileID: 7141013558397906649}
   - component: {fileID: 1083497429954828336}
+  - component: {fileID: 7684454228463534604}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -429,12 +430,14 @@ MonoBehaviour:
   SaveLoad: {fileID: 7141013558397906649}
   Loading: {fileID: 2215215825316941303}
   GameMenu: {fileID: 1083497429954828336}
+  Achievements: {fileID: 7684454228463534604}
   GameConfig:
     BGMVolume: 0
     BGSVolume: 0
     SEVolume: 0
     IsFullScreen: 0
     Resolution: {x: 0, y: 0}
+    RefreshRate: 0
 --- !u!114 &4637954742228232162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +490,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current: {fileID: 0}
   Preview: {fileID: 0}
+--- !u!114 &7684454228463534604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5141753181215402170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8488937b52fbd54ca69204d9538c6b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllAchievements:
+  - {fileID: 11400000, guid: f1609003bd02ba84cac366bf7ac776c7, type: 2}
+  ColletedAchievementsTags: []
+  defaultSprite: {fileID: 21300000, guid: 799796f0e8b87574587247c73d98cff9, type: 3}
 --- !u!1 &5460076364075196226
 GameObject:
   m_ObjectHideFlags: 0

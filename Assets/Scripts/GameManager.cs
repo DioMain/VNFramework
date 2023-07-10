@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public SaveLoadManager SaveLoad;
     public LoadingManager Loading;
     public GameMenuManager GameMenu;
+    public AchievementManager Achievements;
 
     public ConfigInfo GameConfig;
 
@@ -24,12 +25,20 @@ public class GameManager : MonoBehaviour
             Instance = this;
 
             GameConfig = SaveLoad.GetConfig();
-            ApplyConfig();
+            
 
             DontDestroyOnLoad(gameObject);
         }
         else 
             Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        if (Instance == this)
+        {
+            ApplyConfig();
+        }
     }
 
     public void ApplyConfig()

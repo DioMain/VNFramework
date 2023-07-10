@@ -53,6 +53,9 @@ public class ActionListViewer : EditorWindow, IDisposable
         if (GUILayout.Button("Управление задним фоном"))
             BackGroundEditor.Initialize(GetWindow<BackGroundEditor>(true, "BackGround", true));
 
+        if (GUILayout.Button("Засчитать достижение"))
+            AchievementEditor.Initialize(GetWindow<AchievementEditor>(true, "Collect achievement", true));
+
         if (GUILayout.Button("Ждать"))
             WaitEditor.Initialize(GetWindow<WaitEditor>(true, "Wait", true));
 

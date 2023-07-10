@@ -15,6 +15,7 @@ public class SaveLoadManager : MonoBehaviour
     public List<AudioClip> BackgroundSounds = new List<AudioClip>();
 
     public const string ConfigFileName = "GameConfig.cfg";
+    public const string AchievementsFIleName = "Achievements.armenachiv";
 
     public const string SlotFileName = "Slot";
     public const string SlotFileEx = ".armen";
@@ -320,11 +321,44 @@ public class SaveLoadManager : MonoBehaviour
             SEVolume = 2,
             IsFullScreen = true,
             RefreshRate = max.refreshRateRatio.value,
-            Resolution = new Vector2Int(max.width, max.height),
+            Resolution = new Vector2Int(max.width, max.height)
         };
 
         return info;
     }
+
+    public List<string> LoadAchievements()
+    {
+        string path = Path.Combine(Application.persistentDataPath, AchievementsFIleName);
+
+        if (!File.Exists(path))
+            return new List<string>();
+
+        AchievementsInfo info = JsonUtility.FromJson<AchievementsInfo>(File.ReadAllText(path));
+
+        return info.Tags;
+    }
+
+    public void SaveAchievements()
+    {
+        string path = Path.Combine(Application.persistentDataPath, AchievementsFIleName);
+
+        if (File.Exists(path))
+            File.Delete(path);
+
+        AchievementsInfo info = new AchievementsInfo()
+        {
+            Tags = GameManager.Instance.Achievements.ColletedAchievementsTags
+        };
+
+        File.WriteAllText(path, JsonUtility.ToJson(info, true));
+    }
+}
+
+[Serializable]
+public class AchievementsInfo
+{
+    public List<string> Tags;
 }
 
 [Serializable]

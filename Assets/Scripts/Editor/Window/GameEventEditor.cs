@@ -131,6 +131,9 @@ public class GameEventEditor : EditorWindow, IDisposable
             case CharacterManagmentAction:
                 CharacterManagmentEditor.Initialize(GetWindow<CharacterManagmentEditor>(true, "Character managment", true), eventBase as CharacterManagmentAction);
                 break;
+            case AchievementAction:
+                AchievementEditor.Initialize(GetWindow<AchievementEditor>(true, "Collect achievement", true), eventBase as AchievementAction);
+                break;
             default:
                 Debug.LogWarning("Unknown event!");
                 break;

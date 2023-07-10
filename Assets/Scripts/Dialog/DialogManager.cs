@@ -12,6 +12,8 @@ public class DialogManager : MonoBehaviour, IGameInited
     [SerializeField]
     private NameBox nameBox;
 
+    public string ResultText => message.ResultText;
+
     public bool IsWrite => message.IsWrite;
     public bool IsChoise => choise.IsChosing;
 

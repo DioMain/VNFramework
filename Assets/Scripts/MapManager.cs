@@ -39,6 +39,14 @@ public class MapManager : MonoBehaviour
         SetPause(false);
     }
 
+#if UNITY_EDITOR
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.F10)) 
+            GameManager.Instance.Loading.LoadGameScene();
+    }
+#endif
+
     public void SetPause(bool active)
     {
         pause = active;
