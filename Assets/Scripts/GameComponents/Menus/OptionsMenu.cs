@@ -30,7 +30,7 @@ public class OptionsMenu : GameMenuBase
         foreach (var item in Screen.resolutions.Reverse())
         {
             resolutions.Add(new Vector2Int(item.width, item.height));
-            options.Add($"{item.width}x{item.height} : {item.refreshRateRatio}x");
+            options.Add($"{item.width}x{item.height} : {Mathf.RoundToInt((float)item.refreshRateRatio.value)}x");
         }
 
         resolutionDropdown.AddOptions(options);

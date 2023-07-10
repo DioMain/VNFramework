@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class AchievementMenu : GameMenuBase
@@ -35,6 +36,9 @@ public class AchievementMenu : GameMenuBase
         float commonSizeY = 0;
         foreach (var item in GameManager.Instance.Achievements.AllAchievements)
         {
+            if (item.Hiden && !GameManager.Instance.Achievements.ColletedAchievementsTags.Contains(item.Tag))
+                continue;
+
             GameObject obj = Instantiate(prefab, Vector2.zero, Quaternion.identity, content);
 
             RectTransform rt = obj.GetComponent<RectTransform>();

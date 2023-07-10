@@ -15,6 +15,8 @@ public class Achievement : ScriptableObject
     [InspectorName("Условие получения")]
     public string Condition;
 
+    public bool Hiden;
+
     [InspectorName("Иконка")]
     public Sprite Icon;
 }
