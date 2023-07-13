@@ -159,7 +159,7 @@ public class SaveLoadManager : MonoBehaviour
 
         try
         {
-            bg = BackgroundImages.First(i => i.name == slot.BackgroundImageName);
+            bg = Resources.Load<Sprite>($"Sprites/Background/{slot.BackgroundImageName}");
         }
         catch { }
 
@@ -175,8 +175,8 @@ public class SaveLoadManager : MonoBehaviour
 
         try
         {
-            bgm = BackgroundMusics.First(i => i.name == slot.BGMName);
-            bgs = BackgroundSounds.First(i => i.name == slot.BGSName);
+            bgm = Resources.Load<AudioClip>($"Audio/BGM/{slot.BGMName}");
+            bgs = Resources.Load<AudioClip>($"Audio/BGS/{slot.BGSName}");
         }
         catch { }
 
@@ -214,7 +214,7 @@ public class SaveLoadManager : MonoBehaviour
             Sprite charsprite = null;
             try
             {
-                charsprite = CharacterImages.First(i => i.name == item.ImageName);
+                charsprite = Resources.Load<Sprite>($"Sprites/Characters/{item.ImageName}");
             }
             catch { }
 

@@ -59,7 +59,7 @@ public class SaveSlot : MonoBehaviour
             image.gameObject.SetActive(true);
             deleteButton.gameObject.SetActive(true);
 
-            image.sprite = GameManager.Instance.SaveLoad.BackgroundImages.Where(i => i.name == slot.BackgroundImageName).First();
+            image.sprite = Resources.Load<Sprite>($"Sprites/Background/{slot.BackgroundImageName}");
         }
         else
         {
