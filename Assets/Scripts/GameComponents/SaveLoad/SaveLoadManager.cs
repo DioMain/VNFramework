@@ -7,13 +7,6 @@ using UnityEngine;
 
 public class SaveLoadManager : MonoBehaviour
 {
-    [Header("Буфферы для загрузки:")]
-    public List<Sprite> BackgroundImages = new List<Sprite>();
-    public List<Sprite> CharacterImages = new List<Sprite>();
-
-    public List<AudioClip> BackgroundMusics = new List<AudioClip>();
-    public List<AudioClip> BackgroundSounds = new List<AudioClip>();
-
     public const string ConfigFileName = "GameConfig.cfg";
     public const string AchievementsFIleName = "Achievements.armenachiv";
 
