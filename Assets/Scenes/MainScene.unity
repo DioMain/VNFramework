@@ -606,34 +606,97 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   event:
     Actions:
-    - rid: 7617272670284152841
-    - rid: 7617272670284152842
-    - rid: 7617272670284152843
-    - rid: 7617272670284152837
-    - rid: 7617272670284152838
-    - rid: 7617272670284152839
-    - rid: 7617272670284152840
-    - rid: 7617272670284152844
-    - rid: 7617272670284152845
-    - rid: 7617272670284152846
-    - rid: 8659942935163568154
-    - rid: 7617272670284152847
-    - rid: 7617272670284152848
-    - rid: 7617272670284152849
-    - rid: 7617272724932263938
-    - rid: 7617272724932263936
-    - rid: 7617272748560613377
-    - rid: 7617272748560613380
-    - rid: 7617272748560613378
-    - rid: 7617272748560613381
-    - rid: 7617272748560613379
-    - rid: 7617272724932263939
-    - rid: 7617272724932263940
-    - rid: 7617272748560613376
-    - rid: 7617272756454817792
-    - rid: 7617272756454817793
-    - rid: 7617272760732221440
-    - rid: 7617272761645531136
+    - rid: 8659942993019535369
+    - rid: 8659942993019535368
+    - rid: 8659942993019535360
+    - rid: 8659942993019535361
+    - rid: 8659942993019535362
+    - rid: 8659942993019535363
+    - rid: 8659942993019535364
+    - rid: 8659942993019535367
+    - rid: 8659942993019535384
+    - rid: 8659942993019535365
+    - rid: 8659942993019535385
+    - rid: 8659942993019535366
+    - rid: 8659942993019535386
+    - rid: 8659942993019535370
+    - rid: 8659942993019535371
+    - rid: 8659942993019535387
+    - rid: 8659942993019535372
+    - rid: 8659942993019535373
+    - rid: 8659942993019535374
+    - rid: 8659942993019535375
+    - rid: 8659942993019535376
+    - rid: 8659942993019535377
+    - rid: 8659942993019535378
+    - rid: 8659942993019535389
+    - rid: 8659942993019535388
+    - rid: 8659942993019535379
+    - rid: 8659942993019535390
+    - rid: 8659942993019535380
+    - rid: 8659942993019535381
+    - rid: 8659942993019535382
+    - rid: 8659942993019535383
+    - rid: 8659942993019535391
+    - rid: 8659942993019535392
+    - rid: 8659942993019535393
+    - rid: 8659942993019535394
+    - rid: 8659942993019535395
+    - rid: 8659942993019535396
+    - rid: 8659942993019535397
+    - rid: 8659942993019535398
+    - rid: 8659942993019535399
+    - rid: 8659942993019535400
+    - rid: 8659942993019535401
+    - rid: 8659942993019535402
+    - rid: 8659942993019535403
+    - rid: 8659942993019535404
+    - rid: 8659942993019535405
+    - rid: 8659942993019535406
+    - rid: 8659942993019535407
+    - rid: 8659942993019535408
+    - rid: 8659942993019535409
+    - rid: 8659942993019535410
+    - rid: 8659942993019535411
+    - rid: 8659942993019535412
+    - rid: 8659942993019535413
+    - rid: 8659942993019535414
+    - rid: 8659942993019535415
+    - rid: 8659942993019535416
+    - rid: 8659942993019535417
+    - rid: 8659942993019535418
+    - rid: 8659942993019535419
+    - rid: 8659942993019535420
+    - rid: 8659942993019535421
+    - rid: 8659942993019535422
+    - rid: 8659942993019535424
+    - rid: 8659942993019535423
+    - rid: 8659942993019535425
+    - rid: 8659942993019535426
+    - rid: 8659942993019535427
+    - rid: 8659942993019535428
+    - rid: 8659942993019535429
+    - rid: 8659942993019535430
+    - rid: 8659942993019535431
+    - rid: 8659942993019535432
+    - rid: 8659942993019535433
+    - rid: 8659942993019535434
+    - rid: 8659942993019535435
+    - rid: 8659942993019535436
+    - rid: 8659942993019535437
+    - rid: 8659942993019535438
+    - rid: 8659942993019535439
+    - rid: 8659942993019535440
+    - rid: 8659942993019535441
+    - rid: 8659942993711333378
+    - rid: 8659942993711333376
+    - rid: 8659942993019535442
+    - rid: 8659942993019535443
+    - rid: 8659942993711333379
+    - rid: 8659942993019535444
+    - rid: 8659942993019535445
+    - rid: 8659942993711333377
+    - rid: 8659942993711333380
     ConditionEvents: []
     DispathObject: {fileID: 132164054}
     DispathScriptable: {fileID: 0}
@@ -641,26 +704,280 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 7617272670284152837
+    - rid: 8659942993019535360
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: ...
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535361
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u0441\u0442\u043E\u044E \u043F\u0435\u0440\u0435\u0434 \u0432\u043E\u0440\u043E\u0442\u0430\u043C\u0438"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535362
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0412 \u043E\u0434\u043D\u043E \u0432\u0440\u0435\u043C\u044F \u043E\u043D\u0438
+          \u043C\u043D\u0435 \u043A\u0430\u0436\u0443\u0442\u0441\u044F \u0442\u0430\u043A\u0438\u043C\u0438
+          \u0440\u043E\u0434\u043D\u044B\u043C\u0438.."
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535363
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041D\u043E \u0432 \u0434\u0440\u0443\u0433\u043E\u0435 \u0432\u0440\u0435\u043C\u044F
+          \u043E\u043D\u0438 \u043C\u0435\u043D\u044F \u043F\u0443\u0433\u0430\u044E\u0442"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535364
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0422\u0430\u043A\u043E\u0435 \u043E\u0449\u0443\u0449\u0435\u043D\u0438\u0435,
+          \u0447\u0442\u043E \u0437\u0430 \u043D\u0438\u043C\u0438 \u043A\u0442\u043E-\u0442\u043E
+          \u0441\u0442\u043E\u0438\u0442"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535365
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042D\u044D\u044D\u0439! \u0422\u044B, \u0442\u044B \u043C\u0435\u043D\u044F
+          \u0441\u043B\u044B\u0448\u0438\u0448\u044C?"
+        CharName: "\u041D\u0435\u0437\u043D\u0430\u043A\u043E\u043C\u0435\u0446"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535366
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u043D\u0435 \u0441\u0442\u0430\u043B \u043E\u0442\u0432\u0435\u0447\u0430\u0442\u044C
+          \u043D\u0430 \u0435\u0433\u043E \u0432\u043E\u043F\u0440\u043E\u0441"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535367
       type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: CharacterManagment
         operation: 0
         key: a1
-        sprite: {fileID: -854188610, guid: c047dad10e7049542837cd186e5a32af, type: 3}
+        sprite: {fileID: 21300000, guid: 3bffcbe593499b54e904604b932a7f27, type: 3}
         selectionState: 2
-        position: {x: -5, y: -1.5}
+        position: {x: -2, y: -4}
         size: {x: 0.75, y: 0.75}
         autoShow: 1
         deleteInstance: 0
-    - rid: 7617272670284152838
+    - rid: 8659942993019535368
+      type: {class: BackGroundAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: BackGround
+        WithFade: 1
+        FadeTime: 2
+        Image: {fileID: 21300000, guid: 754bab203800d1f4eadeb669a59788ae, type: 3}
+    - rid: 8659942993019535369
+      type: {class: ManageBGMAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageBGM
+        Type: 0
+        Volume: 1
+        Clip: {fileID: 8300000, guid: f4bb7e2bbc39c2a4d91264ed7aa3d830, type: 3}
+        Autoplay: 1
+        FateTime: 1
+        IsPause: 0
+        WaitFate: 1
+    - rid: 8659942993019535370
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u0436\u0435 \u0437\u043D\u0430\u044E/., \u0447\u0442\u043E
+          \u0442\u044B \u043C\u0435\u043D\u044F \u0441\u043B\u044B\u0448\u0438\u0448\u044C"
+        CharName: "\u041D\u0435\u0437\u043D\u0430\u043A\u043E\u043C\u0435\u0446"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535371
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430../| \u043F\u043E\u0434\u043E\u0439\u0434\u0438
+          \u0441\u044E\u0434\u0430.."
+        CharName: "\u041D\u0435\u0437\u043D\u0430\u043A\u043E\u043C\u0435\u0446"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535372
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0427\u0442\u043E? /.\u042D\u0442\u043E\u0442 \u0433\u043E\u043B\u043E\u0441
+          \u043F\u0440\u043E\u0441\u0438\u0442 \u0443 \u043C\u0435\u043D\u044F \u043F\u043E\u043C\u043E\u0449\u0438?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535373
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u044F.. /d"
+        CharName: 
+        Speed: 0
+        Wait: 0
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535374
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u043D\u0435 \u0437\u043D\u0430\u044E, \u0441\u0442\u043E\u0438\u0442
+          \u043B\u0438 \u043C\u043D\u0435 \u0438\u0434\u0442\u0438 \u0442\u0443\u0434\u0430?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535375
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0410 \u0432\u0434\u0440\u0443\u0433 \u044D\u0442\u043E \u043A\u0430\u043A\u0430\u044F-\u0442\u043E
+          \u043B\u043E\u0432\u0443\u0448\u043A\u0430?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535376
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0427\u0442\u043E \u0436\u0435 \u043C\u043D\u0435 \u0434\u0435\u043B\u0430\u0442\u044C?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535377
+      type: {class: ChoiseAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ChoiseEvent
+        Choises:
+        - "\u0418\u0434\u0442\u0438"
+        - "\u041D\u0435 \u0438\u0434\u0442\u0438"
+        - 
+        - 
+        - 
+    - rid: 8659942993019535378
       type: {class: WaitAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: Wait
-        Time: 0.5
-    - rid: 7617272670284152839
+        Time: 2
+    - rid: 8659942993019535379
+      type: {class: BackGroundAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: BackGround
+        WithFade: 1
+        FadeTime: 2
+        Image: {fileID: 21300000, guid: 46aa02c55752af44390898e44215b0d0, type: 3}
+    - rid: 8659942993019535380
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0421\u0430\u043C\u043E\u0435 \u043E\u0431\u044B\u0447\u043D\u043E\u0435
+          \u0443\u0442\u0440\u043E"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535381
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041D\u0435\u0442, /. \u043D\u0438 \u0445\u0440\u0435\u043D\u0430
+          \u043E\u043D\u043E \u043D\u0435 \u043E\u0431\u044B\u0447\u043D\u043E\u0435"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 0
+        CloseAfter: 0
+    - rid: 8659942993019535382
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0427\u0442\u043E \u044D\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E
+          \u0447\u0442\u043E \u0431\u044B\u043B\u043E?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535383
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041B\u0430\u0434\u043D\u043E, /.\u0441\u0430\u043C\u044B\u0439 \u043E\u0431\u044B\u0447\u043D\u044B\u0439
+          \u043A\u043E\u0448\u043C\u0430\u0440, \u044F \u043F\u0440\u0438\u0432\u044B\u043A
+          \u043A \u0442\u0430\u043A\u043E\u043C\u0443"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535384
       type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -670,54 +987,10 @@ MonoBehaviour:
         sprite: {fileID: 0}
         selectionState: 2
         position: {x: 0, y: 0}
-        size: {x: 0, y: 0}
+        size: {x: 1, y: 1}
         autoShow: 1
         deleteInstance: 0
-    - rid: 7617272670284152840
-      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: Message
-        Text: "\u0422\u044B \u043F\u0438\u0434\u043E\u0440?"
-        CharName: "\u0410\u043D\u0434\u0440\u0435\u0439 1"
-        Speed: 0
-        Wait: 1
-        Clear: 1
-        CloseAfter: 0
-    - rid: 7617272670284152841
-      type: {class: BackGroundAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: BackGround
-        WithFade: 0
-        FadeTime: 1
-        Image: {fileID: 21300000, guid: 009f6b70b6866714295bf52e44e41429, type: 3}
-    - rid: 7617272670284152842
-      type: {class: ManageBGMAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: ManageBGM
-        Type: 0
-        Volume: 1
-        Clip: {fileID: 8300000, guid: 3f32478ea92e92148b40bf8cc0803711, type: 3}
-        Autoplay: 1
-        FateTime: 1
-        IsPause: 0
-        WaitFate: 1
-    - rid: 7617272670284152843
-      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: CharacterManagment
-        operation: 0
-        key: a2
-        sprite: {fileID: 21300000, guid: 0d3636f2528f2154bb9309d6d7ccac80, type: 3}
-        selectionState: 2
-        position: {x: 5, y: -2}
-        size: {x: 0.9, y: 0.75}
-        autoShow: 1
-        deleteInstance: 0
-    - rid: 7617272670284152844
+    - rid: 8659942993019535385
       type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -727,34 +1000,36 @@ MonoBehaviour:
         sprite: {fileID: 0}
         selectionState: 3
         position: {x: 0, y: 0}
-        size: {x: 0, y: 0}
+        size: {x: 1, y: 1}
         autoShow: 1
         deleteInstance: 0
-    - rid: 7617272670284152845
+    - rid: 8659942993019535386
       type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: CharacterManagment
         operation: 2
-        key: a2
+        key: a1
         sprite: {fileID: 0}
         selectionState: 2
         position: {x: 0, y: 0}
-        size: {x: 0, y: 0}
+        size: {x: 1, y: 1}
         autoShow: 1
         deleteInstance: 0
-    - rid: 7617272670284152846
-      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+    - rid: 8659942993019535387
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
-        Name: Message
-        Text: "\u0421\u0430\u043C \u0442\u044B \u043F\u0438\u0434\u043E\u0440\nasdsa\nasdsagjhdjsahdj\nasdsa"
-        CharName: "\u0410\u043D\u0434\u0440\u0435\u0439 2"
-        Speed: 0
-        Wait: 1
-        Clear: 1
-        CloseAfter: 1
-    - rid: 7617272670284152847
+        Name: CharacterManagment
+        operation: 2
+        key: a1
+        sprite: {fileID: 0}
+        selectionState: 3
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535388
       type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -767,82 +1042,118 @@ MonoBehaviour:
         size: {x: 1, y: 1}
         autoShow: 1
         deleteInstance: 0
-    - rid: 7617272670284152848
-      type: {class: WaitAction, ns: , asm: Assembly-CSharp}
+    - rid: 8659942993019535389
+      type: {class: ManageBGMAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
-        Name: Wait
-        Time: 1
-    - rid: 7617272670284152849
-      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+        Name: ManageBGM
+        Type: 4
+        Volume: 1
+        Clip: {fileID: 0}
+        Autoplay: 1
+        FateTime: 1
+        IsPause: 0
+        WaitFate: 1
+    - rid: 8659942993019535390
+      type: {class: ManageBGMAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
-        Name: CharacterManagment
-        operation: 1
-        key: a2
-        sprite: {fileID: 0}
-        selectionState: 2
-        position: {x: 0, y: 0}
-        size: {x: 1, y: 1}
-        autoShow: 1
-        deleteInstance: 0
-    - rid: 7617272724932263936
+        Name: ManageBGM
+        Type: 0
+        Volume: 1
+        Clip: {fileID: 8300000, guid: b27f6338b43f0b047972ff08ff0f9dd3, type: 3}
+        Autoplay: 1
+        FateTime: 1
+        IsPause: 0
+        WaitFate: 1
+    - rid: 8659942993019535391
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u043B \u0432
+          \u0442\u0435\u043B\u0435\u0444\u043E\u043D, /.\u0431\u044B\u043B\u043E
+          10:24 08.04.2023"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535392
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0421\u043E\u043B\u043D\u0446\u0435 \u044F\u0440\u043A\u043E \u0441\u0432\u0435\u0442\u0438\u0442,/.
+          \u0432 \u043A\u043E\u043C\u043D\u0430\u0442\u0435 \u0443\u043B\u044B\u0431\u0430\u043B\u0441\u044F
+          \u0414\u0438\u043C\u0430"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535393
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041F\u0440\u043E\u0441\u043D\u0443\u043B\u0441\u044F \u0438 \u0443\u043B\u044B\u0431\u043D\u0443\u043B\u0441\u044F,/.
+          \u044F \u0440\u0430\u0434 \u0437\u0430 \u043D\u0435\u0433\u043E"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535394
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0422\u0430\u0440\u0430\u043A\u0430\u043D\u044B \u043A\u0430\u043A
+          \u043E\u0431\u044B\u0447\u043D\u043E \u0431\u0435\u0433\u0430\u043B\u0438
+          \u043D\u0430\u043F\u0435\u0440\u0435\u0433\u043E\u043D\u043A\u0438 \u0434\u0440\u0443\u0433
+          \u0441 \u0434\u0440\u0443\u0433\u043E\u043C \u043F\u043E \u0441\u0442\u0435\u043D\u0435"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535395
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0410\u043D\u0434\u0440\u0435\u0439 \u043D\u0435 \u0441\u043F\u0430\u043B
+          \u0443\u0436\u0435 \u0434\u0430\u0432\u043D\u043E"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535396
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0412\u0437\u0433\u043B\u044F\u043D\u0443\u043B \u043D\u0430 \u0442\u0443\u043C\u0431\u043E\u0447\u043A\u0443,
+          \u0442\u0430\u043C \u0441\u0442\u043E\u044F\u043B\u0430 \u0434\u0443\u0434\u043A\u0430"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535397
       type: {class: ChoiseAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: ChoiseEvent
         Choises:
-        - asd
-        - asdw
-        - a
+        - "\u0417\u0430\u0442\u044F\u043D\u0443\u0442\u044C\u0441\u044F"
+        - "\u041D\u0435 \u0437\u0430\u0442\u044F\u043D\u0443\u0442\u044C\u0441\u044F"
         - 
         - 
-    - rid: 7617272724932263938
-      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: Message
-        Text: A?
-        CharName: 
-        Speed: 0
-        Wait: 0
-        Clear: 1
-        CloseAfter: 0
-    - rid: 7617272724932263939
-      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: Message
-        Text: test = /vi[test]
-        CharName: 
-        Speed: 0
-        Wait: 1
-        Clear: 1
-        CloseAfter: 0
-    - rid: 7617272724932263940
-      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: Message
-        Text: '1
-
-          2
-
-          3
-
-          4'
-        CharName: 
-        Speed: 0
-        Wait: 1
-        Clear: 1
-        CloseAfter: 0
-    - rid: 7617272748560613376
-      type: {class: AchievementAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: CollectAchievement
-        AchievementTag: ta
-    - rid: 7617272748560613377
+        - 
+    - rid: 8659942993019535398
       type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -857,22 +1168,120 @@ MonoBehaviour:
         VariableFloatValue: 0
         VariableBoolValue: 0
         ChoiseExpected: 0
-    - rid: 7617272748560613378
+    - rid: 8659942993019535399
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u043F\u0440\u0438\u043F\u043E\u0434\u043D\u044F\u043B\u0441\u044F,/.
+          \u0432\u0437\u044F\u043B \u0432 \u0440\u0443\u043A\u0443 \u043F\u043E\u0434
+          \u0438 \u043D\u0430\u0447\u0430\u043B \u0437\u0430\u0442\u044F\u0433\u0438\u0432\u0430\u0442\u044C\u0441\u044F"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535400
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0415\u0431\u0430\u0430\u0430\u0430\u0442\u044C"
+        CharName: "\u0421\u0435\u043C\u0451\u043D"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535401
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u0441\u0434\u0435\u043B\u0430\u043B \u0442\u044F\u0433\u0443
+          \u0438 \u0443\u043B\u0435\u0442\u0435\u043B \u0432 \u043A\u043E\u0441\u043C\u043E\u0441.."
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535402
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041E\u0431\u0434\u0443\u0432,/.\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442\u0441\u044F,/.
+          \u0431\u044B\u043B \u0437\u0430\u043A\u0440\u044B\u0442 "
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535403
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041B\u0435\u0433 \u043D\u0430 \u043F\u043E\u0434\u0443\u0448\u043A\u0443
+          \u0438 \u0447\u0443\u0442\u044C \u043B\u0438 \u043D\u0435 \u0432\u044B\u0442\u043E\u0448\u043D\u0438\u043B\u043E"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535404
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0422\u0430\u043A, \u043F\u043E\u0440\u0430 \u0431\u044B \u0441 \u044D\u0442\u0438\u043C
+          \u0437\u0430\u0432\u044F\u0437\u044B\u0432\u0430\u0442\u044C"
+        CharName: "\u0421\u0435\u043C\u0451\u043D"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535405
       type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: ConditionBranching
-        Type: 2
+        Type: 1
         CompareVariable: 0
-        CompareChoise: 0
+        CompareChoise: 1
         VariableKey: 
         VariableType: 0
         VariableStringValue: 
         VariableIntValue: 0
         VariableFloatValue: 0
         VariableBoolValue: 0
-        ChoiseExpected: 0
-    - rid: 7617272748560613379
+        ChoiseExpected: 1
+    - rid: 8659942993019535406
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041F\u0443\u0441\u0442\u044C \u0441\u0442\u043E\u0438\u0442 \u0434\u0430\u043B\u044C\u0448\u0435,
+          \u0447\u0435\u043C \u043E\u043D\u0430 \u043C\u043D\u0435 \u043C\u0435\u0448\u0430\u0435\u0442?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535407
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u0432\u0441\u0435 \u0440\u0430\u0432\u043D\u043E \u0441\u043E\u0431\u0438\u0440\u0430\u043B\u0441\u044F
+          \u0431\u0440\u043E\u0441\u0430\u0442\u044C \u043F\u0430\u0440\u0438\u0442\u044C,
+          \u0434\u0443\u043C\u0430\u044E, \u043C\u043E\u0436\u043D\u043E \u0441\u0435\u0433\u043E\u0434\u043D\u044F
+          \u0438 \u043D\u0430\u0447\u0430\u0442\u044C \u044D\u0442\u043E\u0442 \u0434\u0435\u043D\u044C"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535408
       type: {class: ConditionBranchingAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
@@ -887,74 +1296,522 @@ MonoBehaviour:
         VariableFloatValue: 0
         VariableBoolValue: 0
         ChoiseExpected: 0
-    - rid: 7617272748560613380
-      type: {class: ManageVarsAction, ns: , asm: Assembly-CSharp}
+    - rid: 8659942993019535409
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
-        Name: ManageVars
-        OType: 0
-        VType: 1
-        BoolValue: 0
-        IntValue: 1
-        FloatValue: 0
-        StringValue: 
-        Key: test
-    - rid: 7617272748560613381
-      type: {class: ManageVarsAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: ManageVars
-        OType: 0
-        VType: 1
-        BoolValue: 1
-        IntValue: 12
-        FloatValue: 0
-        StringValue: 
-        Key: test
-    - rid: 7617272756454817792
+        Name: CharacterManagment
+        operation: 0
+        key: a2
+        sprite: {fileID: -854188610, guid: c047dad10e7049542837cd186e5a32af, type: 3}
+        selectionState: 2
+        position: {x: 0, y: -1}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535410
       type: {class: MessageAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: Message
-        Text: 123
+        Text: "\u0410\u043D\u0434\u0440\u0435\u0439 \u043E\u0431\u0440\u0430\u0442\u0438\u043B
+          \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435 \u043D\u0430 \u043C\u0435\u043D\u044F"
         CharName: 
         Speed: 0
         Wait: 1
         Clear: 1
         CloseAfter: 0
-    - rid: 7617272756454817793
+    - rid: 8659942993019535411
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 2
+        key: a2
+        sprite: {fileID: 0}
+        selectionState: 2
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535412
       type: {class: MessageAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: Message
-        Text: 123
+        Text: "\u0422\u044B \u043A\u0430\u043A\u043E\u0433\u043E \u0445\u0443\u044F
+          \u043D\u043E\u0447\u044C\u044E \u043D\u0435 \u043F\u043E\u0441\u0442\u0430\u0432\u0438\u043B
+          \u0434\u0443\u0434\u043A\u0443 \u043D\u0430 \u0437\u0430\u0440\u044F\u0434\u043A\u0443!? "
+        CharName: "\u0410\u043D\u0434\u0440\u0435\u0439"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535413
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 2
+        key: a2
+        sprite: {fileID: 0}
+        selectionState: 3
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535414
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0411\u043B\u044F\u0442\u044C,/. \u043A\u0430\u043A \u043E\u0431\u044B\u0447\u043D\u043E
+          \u0435\u0433\u043E \u0437\u0430\u0435\u0431\u044B"
         CharName: 
         Speed: 0
         Wait: 1
         Clear: 1
         CloseAfter: 0
-    - rid: 7617272760732221440
-      type: {class: AchievementAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: CollectAchievement
-        AchievementTag: ha
-    - rid: 7617272761645531136
-      type: {class: EndAction, ns: , asm: Assembly-CSharp}
-      data:
-        ActionIndex: -1
-        Name: End
-    - rid: 8659942935163568154
+    - rid: 8659942993019535415
       type: {class: MessageAction, ns: , asm: Assembly-CSharp}
       data:
         ActionIndex: -1
         Name: Message
-        Text: 34234
+        Text: "\u043A\u0445\u043C, \u044F \u0434\u0443\u043C\u0430\u043B \u043E\u043D\u0430
+          \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u0437\u0430\u0440\u044F\u0436\u0435\u043D\u0430"
+        CharName: "\u0421\u0435\u043C\u0435\u043D"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535416
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 2
+        key: a2
+        sprite: {fileID: 0}
+        selectionState: 2
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535417
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0414\u0443\u043C\u0430\u043B \u043E\u043D, \u043E \u043B\u0430\u0431\u0430\u0445
+          \u0434\u0443\u043C\u0430\u0439, \u0434\u0435\u0431\u0438\u043B"
+        CharName: "\u0410\u043D\u0434\u0440\u0435\u0439"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535418
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 2
+        key: a2
+        sprite: {fileID: 0}
+        selectionState: 3
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535419
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0432\u043D\u043E\u0432\u044C \u0443\u043F\u043E\u043C\u0438\u043D\u0430\u043D\u0438\u0435
+          \u043E \u043B\u0430\u0431\u0430\u0445, \u043A\u0430\u043A \u0441\u043C\u0435\u0448\u043D\u043E"
         CharName: 
         Speed: 0
         Wait: 1
         Clear: 1
         CloseAfter: 0
+    - rid: 8659942993019535420
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0442\u043E\u0436\u0435 \u0432\u0435\u0440\u043D\u043E"
+        CharName: "\u0421\u0435\u043C\u0435\u043D"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535421
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 1
+        key: a2
+        sprite: {fileID: 0}
+        selectionState: 2
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535422
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0410\u043D\u0434\u0440\u0435\u0439 \u0432\u044B\u0448\u0435\u043B
+          \u0438\u0437 \u043A\u043E\u043C\u043D\u0430\u0442\u044B, \u043C\u044B \u043E\u0441\u0442\u0430\u043B\u0438\u0441\u044C
+          \u0441 \u0414\u0438\u043C\u043E\u0439 \u043D\u0430\u0435\u0434\u0438\u043D\u0435"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535423
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041E\u0445 \u0443\u0436 \u044D\u0442\u043E\u0442 \u0414\u0438\u043C\u0430.
+          \u042F \u043D\u0435 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u044E,
+          \u043A\u0430\u043A \u043C\u043E\u0436\u043D\u043E \u0431\u044B\u0442\u044C
+          \u0442\u0430\u043A\u0438\u043C \u0432\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u043C?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535424
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 0
+        key: a3
+        sprite: {fileID: 21300000, guid: 1482fa8400eb47c4f8e0dfe0e65a3aae, type: 3}
+        selectionState: 2
+        position: {x: -4, y: -1}
+        size: {x: 5, y: 5}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535425
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041E\u043D \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435
+          \u0441\u043F\u0438\u0442, \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E
+          \u043D\u0430 \u0441\u0442\u0440\u0435\u043C\u0435, \u043E\u0442 \u043A\u043E\u0433\u043E
+          \u043E\u043D \u043D\u0430\u0441 \u043E\u0445\u0440\u0430\u043D\u044F\u0435\u0442?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535426
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041F\u043E\u0432\u0435\u0437\u0435\u0442 \u0436\u0435 \u0431\u0443\u0434\u0443\u0449\u0435\u0439
+          \u0435\u0433\u043E \u0434\u0435\u0432\u0443\u0448\u043A\u0435"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535427
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u043A\u0445\u043C"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535428
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041F\u043E-\u043C\u043E\u0435\u043C\u0443, \u043E\u043D \u0441\u043C\u043E\u0442\u0440\u0438\u0442
+          \u043D\u0430 \u043C\u0435\u043D\u044F, \u043E\u043D \u0445\u043E\u0447\u0435\u0442
+          \u0447\u0442\u043E-\u0442\u043E \u043C\u043D\u0435 \u0441\u043A\u0430\u0437\u0430\u0442\u044C?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535429
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 2
+        key: a3
+        sprite: {fileID: 0}
+        selectionState: 2
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535430
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0422\u044B \u0438\u0434\u0435\u0448\u044C \u0441\u0435\u0433\u043E\u0434\u043D\u044F
+          \u043D\u0430 \u043F\u0430\u0440\u044B?"
+        CharName: "\u0414\u0438\u043C\u0430"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535431
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 2
+        key: a3
+        sprite: {fileID: 0}
+        selectionState: 3
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535432
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u043F\u0435\u0440\u0432\u0430\u044F \u0443 \u043D\u0430\u0441 \u0432\u0440\u043E\u0434\u0435
+          \u043A\u0430\u043A \u043B\u0435\u043A\u0446\u0438\u044F, \u043F\u043E\u0447\u0435\u043C\u0443
+          \u0431\u044B \u043D\u0435 \u0441\u0445\u043E\u0434\u0438\u0442\u044C?"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535433
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0414\u0430, \u0430 \u0442\u044B \u0438\u0434\u0435\u0448\u044C?"
+        CharName: "\u0421\u0435\u043C\u0435\u043D"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535434
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 2
+        key: a3
+        sprite: {fileID: 0}
+        selectionState: 2
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535435
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u041A\u043E\u043D\u0435\u0447\u043D\u043E \u0438\u0434\u0443, \u044F
+          \u0436\u0435 \u043D\u0435 \u0441\u043E\u0431\u0438\u0440\u0430\u044E\u0441\u044C
+          \u043A\u0430\u043A \u0442\u044B \u043F\u0440\u043E\u0433\u0443\u043B\u0438\u0432\u0430\u0442\u044C
+          \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E \u043F\u0430\u0440\u044B"
+        CharName: "\u0414\u0438\u043C\u0430"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535436
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0422\u043E\u043B\u044C\u043A\u043E \u0432\u043E\u0442 \u043D\u0430\u043C
+          \u0431\u044B \u043F\u043E-\u0445\u043E\u0440\u043E\u0448\u0435\u043C\u0443
+          \u0443\u0436\u0435 \u0432\u044B\u0445\u043E\u0434\u0438\u0442\u044C, \u0441\u043A\u043E\u0440\u043E
+          \u0443\u0436\u0435 \u043D\u0430\u0447\u0430\u043B\u043E \u043F\u0430\u0440\u044B"
+        CharName: "\u0414\u0438\u043C\u0430"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535437
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u0432\u0437\u044F\u043B \u0442\u0435\u043B\u0435\u0444\u043E\u043D
+          \u0432 \u0440\u0443\u043A\u0443, \u0432\u0440\u0435\u043C\u044F \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u043B\u043E
+          12:48"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535438
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0411\u043B\u044F\u0442\u044C, \u0441\u043A\u043E\u043B\u044C\u043A\u043E
+          \u044F \u0441\u043F\u0430\u043B??"
+        CharName: "\u0421\u0435\u043C\u0435\u043D"
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535439
+      type: {class: CharacterManagmentAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: CharacterManagment
+        operation: 1
+        key: a3
+        sprite: {fileID: 0}
+        selectionState: 2
+        position: {x: 0, y: 0}
+        size: {x: 1, y: 1}
+        autoShow: 1
+        deleteInstance: 0
+    - rid: 8659942993019535440
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0414\u0438\u043C\u0430 \u043C\u043E\u043B\u0447\u0430 \u0443\u0448\u0435\u043B
+          \u0443\u043C\u044B\u0432\u0430\u0442\u044C\u0441\u044F"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535441
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u042F \u0432\u0441\u0442\u0430\u043B, \u043D\u0430\u0434\u0435\u043B
+          \u043A\u0430\u043A \u043E\u0431\u044B\u0447\u043D\u043E \u0440\u0443\u0431\u0430\u0448\u043A\u0443
+          \u043D\u0430 \u0441\u0442\u0443\u043B\u0435 \u0438 \u043F\u043E\u0448\u0435\u043B
+          \u0442\u043E\u0436\u0435 \u0443\u043C\u044B\u0432\u0430\u0442\u044C\u0441\u044F"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535442
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u2026"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535443
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u2026"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535444
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u2026"
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993019535445
+      type: {class: MessageAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: Message
+        Text: "\u0410 \u0447\u0442\u043E \u044F \u043C\u043E\u0433\u0443 \u0441\u043A\u0430\u0437\u0430\u0442\u044C?
+          \u042F \u043F\u0440\u043E\u0441\u0442\u043E \u0443\u043C\u044B\u043B\u0441\u044F "
+        CharName: 
+        Speed: 0
+        Wait: 1
+        Clear: 1
+        CloseAfter: 0
+    - rid: 8659942993711333376
+      type: {class: BackGroundAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: BackGround
+        WithFade: 1
+        FadeTime: 1
+        Image: {fileID: 21300000, guid: 593184de576701f4da6122178d3dd1c2, type: 3}
+    - rid: 8659942993711333377
+      type: {class: BackGroundAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: BackGround
+        WithFade: 1
+        FadeTime: 1
+        Image: {fileID: 21300000, guid: 46aa02c55752af44390898e44215b0d0, type: 3}
+    - rid: 8659942993711333378
+      type: {class: ManageBGMAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageBGM
+        Type: 4
+        Volume: 1
+        Clip: {fileID: 0}
+        Autoplay: 1
+        FateTime: 2
+        IsPause: 0
+        WaitFate: 1
+    - rid: 8659942993711333379
+      type: {class: ManageBGMAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageBGM
+        Type: 1
+        Volume: 1
+        Clip: {fileID: 0}
+        Autoplay: 1
+        FateTime: 1
+        IsPause: 0
+        WaitFate: 1
+    - rid: 8659942993711333380
+      type: {class: ManageBGMAction, ns: , asm: Assembly-CSharp}
+      data:
+        ActionIndex: -1
+        Name: ManageBGM
+        Type: 0
+        Volume: 1
+        Clip: {fileID: 8300000, guid: 635ea00245c43af4181ebcb2366e870b, type: 3}
+        Autoplay: 1
+        FateTime: 1
+        IsPause: 0
+        WaitFate: 1
 --- !u!114 &132164055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1490,8 +2347,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -139.01, y: -477.68}
-  m_SizeDelta: {x: 621.74, y: 48.41}
+  m_AnchoredPosition: {x: 0.23, y: -477.68}
+  m_SizeDelta: {x: 1853.9, y: 48.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284878392
 MonoBehaviour:
@@ -4506,9 +5363,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130.2, y: 0.19998968}
+  m_AnchoredPosition: {x: -811, y: -2.07}
   m_SizeDelta: {x: 44.26999, y: 44.27}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!114 &1061002372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5782,9 +6639,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -250.2, y: -2.07}
+  m_AnchoredPosition: {x: -878, y: -2.07}
   m_SizeDelta: {x: 44.26999, y: 44.27}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.50000006, y: 0.5000012}
 --- !u!114 &1366822794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6033,9 +6890,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44.799988, y: 0.19998968}
+  m_AnchoredPosition: {x: -745, y: -2.0701}
   m_SizeDelta: {x: 44.26999, y: 44.27}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.50000054, y: 0.50000006}
 --- !u!114 &1458002191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6253,7 +7110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.22425167, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.22425187, y: -0.000015258789}
   m_SizeDelta: {x: 8.570007, y: -6}
   m_Pivot: {x: -0.00000013783574, y: 0.5}
 --- !u!114 &1513866693
@@ -6626,9 +7483,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 122.29999, y: 0.19998968}
+  m_AnchoredPosition: {x: 816, y: -2.07}
   m_SizeDelta: {x: 44.26999, y: 44.27}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1664900237
 MonoBehaviour:
   m_ObjectHideFlags: 0

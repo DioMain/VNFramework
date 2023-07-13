@@ -505,6 +505,7 @@ MonoBehaviour:
   AllAchievements:
   - {fileID: 11400000, guid: f1609003bd02ba84cac366bf7ac776c7, type: 2}
   - {fileID: 11400000, guid: 2f5f0c33f356d2e4c8b428f1b885e066, type: 2}
+  - {fileID: 11400000, guid: aea3d6e6e40207b4c8fb6384911b9373, type: 2}
   ColletedAchievementsTags: []
   defaultSprite: {fileID: 21300000, guid: 799796f0e8b87574587247c73d98cff9, type: 3}
 --- !u!1 &5460076364075196226
