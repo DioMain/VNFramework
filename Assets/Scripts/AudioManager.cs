@@ -49,7 +49,14 @@ public class AudioManager : MonoBehaviour
     /// Создаёд затухание BGM
     /// </summary>
     /// <param name="time">в секундах</param>
-    public void FadeBGM(float time, bool stop = true) => StartCoroutine(FadeBGMCoroutine(time, stop));
+    /// <param name="direction">false - на выключение, true - на включение</param>
+    public void FadeBGM(float time, bool stop = true, bool direction = false)
+    {
+        if (direction)
+            StartCoroutine(FadeInBGMCoroutine(time));
+        else
+            StartCoroutine(FadeOutBGMCoroutine(time, stop));
+    }
 
     public void SetBGS(AudioClip clip, bool autoplay = false)
     {
@@ -81,7 +88,7 @@ public class AudioManager : MonoBehaviour
         soundSource.outputAudioMixerGroup.audioMixer.SetFloat("Vol", GameManager.Instance.GameConfig.SEVolume < -40 ? -80 : GameManager.Instance.GameConfig.SEVolume);
     }
 
-    private IEnumerator FadeBGMCoroutine(float time, bool stop)
+    private IEnumerator FadeOutBGMCoroutine(float time, bool stop)
     {
         isFadingBGM = true;
 
@@ -100,6 +107,29 @@ public class AudioManager : MonoBehaviour
             StopBGM();
         else
             PauseBGM();
+
+        bgmSource.volume = oldVolume;
+
+        isFadingBGM = false;
+    }
+    private IEnumerator FadeInBGMCoroutine(float time)
+    {
+        isFadingBGM = true;
+
+        PlayBGM();
+
+        float oldVolume = bgmSource.volume;
+
+        bgmSource.volume = 0;
+
+        float step = oldVolume / time;
+
+        while (bgmSource.volume < oldVolume)
+        {
+            bgmSource.volume += step * Time.deltaTime;
+
+            yield return null;
+        }
 
         bgmSource.volume = oldVolume;
 

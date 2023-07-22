@@ -6,7 +6,7 @@ public class ManageBGMAction : ActionBase
 {
     public enum ManageType
     {
-        Set, Play, Stop, Pause, Fate
+        Set, Play, Stop, Pause, Fade
     }
 
     public ManageType Type;
@@ -19,11 +19,12 @@ public class ManageBGMAction : ActionBase
 
     #endregion
 
-    #region FOR FATE
+    #region FOR FADE
 
-    public float FateTime;
+    public float FadeTime;
     public bool IsPause;
-    public bool WaitFate;
+    public bool WaitFade;
+    public bool FadeDirection;
 
     #endregion
 
@@ -35,9 +36,11 @@ public class ManageBGMAction : ActionBase
         Clip = null;
         Autoplay = true;
 
-        FateTime = 1;
+        FadeTime = 1;
         IsPause = false;
-        WaitFate = true;
+        WaitFade = true;
+
+        FadeDirection = false;
     }
 
     public override IEnumerator EventCorotine()
@@ -57,10 +60,10 @@ public class ManageBGMAction : ActionBase
             case ManageType.Pause:
                 GameManager.Instance.Audio.PauseBGM();
                 break;
-            case ManageType.Fate:
-                GameManager.Instance.Audio.FadeBGM(FateTime, !IsPause);
+            case ManageType.Fade:
+                GameManager.Instance.Audio.FadeBGM(FadeTime, !IsPause, FadeDirection);
 
-                if (WaitFate)
+                if (WaitFade)
                     yield return new WaitWhile(() => GameManager.Instance.Audio.IsFadingBGM);
                 break;
         }
@@ -76,7 +79,7 @@ public class ManageBGMAction : ActionBase
             ManageType.Play => $"ÍÀ×ÀÒÜ",
             ManageType.Stop => $"ÎÑÒÀÍÎÂÈÒÜ",
             ManageType.Pause => $"ÏÀÓÇÀ",
-            ManageType.Fate => $"ÇÀÒÓÕÀÍÈÅ: {{ÂÐÅÌß ÇÀÒÓÕÀÍÈß: {FateTime}s, ÏÀÓÇÀ?: {IsPause}, ÆÄÀÒÜ?: {WaitFate}}}",
+            ManageType.Fade => $"ÇÀÒÓÕÀÍÈÅ: {{ÂÐÅÌß ÇÀÒÓÕÀÍÈß: {FadeTime}s, ÏÀÓÇÀ?: {IsPause}, ÆÄÀÒÜ?: {WaitFade}}}",
             _ => "NULL!",
         };
     }
