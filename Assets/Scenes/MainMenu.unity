@@ -919,6 +919,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7684454228463534604, guid: e2c9f7df18510cf4993a3edf83d63052, type: 3}
+      propertyPath: AllAchievements.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
