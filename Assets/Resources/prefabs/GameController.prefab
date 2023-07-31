@@ -462,20 +462,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5eaf7404730ca40b952e3a0bee32b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BackgroundImages:
-  - {fileID: 21300000, guid: 009f6b70b6866714295bf52e44e41429, type: 3}
-  - {fileID: 21300000, guid: 96fef27716ead1b49bd12be21a78ade5, type: 3}
-  CharacterImages:
-  - {fileID: -854188610, guid: c047dad10e7049542837cd186e5a32af, type: 3}
-  - {fileID: 1589436218, guid: 31340638d9c625749ba264af565ed843, type: 3}
-  - {fileID: 21300000, guid: 0d3636f2528f2154bb9309d6d7ccac80, type: 3}
-  - {fileID: 21300000, guid: f11ad5c42fa1941489c66892295a363f, type: 3}
-  BackgroundMusics:
-  - {fileID: 8300000, guid: 635ea00245c43af4181ebcb2366e870b, type: 3}
-  - {fileID: 8300000, guid: 3f32478ea92e92148b40bf8cc0803711, type: 3}
-  - {fileID: 8300000, guid: 1c4bf9133dcaeab4a84a5ec4b5aaaf9c, type: 3}
-  BackgroundSounds:
-  - {fileID: 8300000, guid: 0cbd81f69726fab4fa3500303dcd5cbe, type: 3}
 --- !u!114 &1083497429954828336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,8 +489,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllAchievements:
-  - {fileID: 11400000, guid: f1609003bd02ba84cac366bf7ac776c7, type: 2}
-  - {fileID: 11400000, guid: 2f5f0c33f356d2e4c8b428f1b885e066, type: 2}
+  - {fileID: 11400000, guid: 2f3a0c7febaafcb4b9ba739d5cbcb13a, type: 2}
+  - {fileID: 11400000, guid: 3be625aa41f5f814ea65cb6c1e060224, type: 2}
   - {fileID: 11400000, guid: aea3d6e6e40207b4c8fb6384911b9373, type: 2}
   ColletedAchievementsTags: []
   defaultSprite: {fileID: 21300000, guid: 799796f0e8b87574587247c73d98cff9, type: 3}
