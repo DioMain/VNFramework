@@ -134,6 +134,9 @@ public class GameEventEditor : EditorWindow, IDisposable
             case AchievementAction:
                 AchievementEditor.Initialize(GetWindow<AchievementEditor>(true, "Collect achievement", true), eventBase as AchievementAction);
                 break;
+            case ManageVideoAction:
+                ManageVideoEditor.Initialize(GetWindow<ManageVideoEditor>(true, "Manage video", true), eventBase as ManageVideoAction);
+                break;
             default:
                 Debug.LogWarning("Unknown event!");
                 break;

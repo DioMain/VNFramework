@@ -54,9 +54,42 @@ public class ConditionBranchingEditor : ActionEditorWindowBase<ConditionBranchin
 
                 EditorGUILayout.BeginHorizontal();
 
+                EditorGUILayout.LabelField("Имя переменной", new GUIStyle(EditorStyles.label)
+                {
+                    alignment = TextAnchor.MiddleLeft,
+                    stretchWidth=true,
+                }, GUILayout.MinWidth(0), GUILayout.MaxWidth(500));
+
+                EditorGUILayout.LabelField("Оператор", new GUIStyle(EditorStyles.label)
+                {
+                    alignment = TextAnchor.MiddleCenter,
+                    stretchWidth=true,
+                }, GUILayout.MinWidth(0), GUILayout.MaxWidth(500));
+
+                EditorGUILayout.LabelField("Значение", new GUIStyle(EditorStyles.label)
+                {
+                    alignment = TextAnchor.MiddleRight,
+                    stretchWidth=true,
+                }, GUILayout.MinWidth(0), GUILayout.MaxWidth(500));
+
+                EditorGUILayout.EndHorizontal();
+
+                EditorGUILayout.BeginHorizontal();
+
                 @event.VariableKey = EditorGUILayout.TextField(@event.VariableKey);
 
-                EditorGUILayout.LabelField("?=", text, GUILayout.Width(50));
+                if (@event.VariableType == 1 || @event.VariableType == 2)
+                {
+                    @event.Operator = (ConditionBranchingAction.ConditionOperator)EditorGUILayout.Popup((int)@event.Operator, new string[] { "==", ">", "<", ">=", "<=" }, GUILayout.Width(75));
+                }
+                else
+                {
+                    EditorGUILayout.LabelField("==", text, GUILayout.Width(50));
+
+                    @event.Operator = ConditionBranchingAction.ConditionOperator.Equals;
+                }
+                    
+
 
                 switch (@event.VariableType)
                 {

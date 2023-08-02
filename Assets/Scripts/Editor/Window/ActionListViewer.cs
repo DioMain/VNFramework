@@ -47,6 +47,9 @@ public class ActionListViewer : EditorWindow, IDisposable
         if (GUILayout.Button("Запуск SE"))
             PlaySEEditor.Initialize(GetWindow<PlaySEEditor>(true, "Play SE", true));
 
+        if (GUILayout.Button("Управление видео"))
+            ManageVideoEditor.Initialize(GetWindow<ManageVideoEditor>(true, "Manage video", true));
+
         if (GUILayout.Button("Управление переменной"))
             ManageVarEditor.Initialize(GetWindow<ManageVarEditor>(true, "Variable manager", true));
 

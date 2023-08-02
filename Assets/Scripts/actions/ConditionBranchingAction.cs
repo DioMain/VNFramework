@@ -12,9 +12,14 @@ public class ConditionBranchingAction : ActionBase
         If, ElseIf, Else, EndIf
     }
 
+    public enum ConditionOperator
+    {
+        Equals, More, Less, MoreOrEquals, LessOrEquals
+    }
+
     public ConditionType Type;
 
-    //public int Index;
+    public ConditionOperator Operator;
 
     public bool CompareVariable, CompareChoise;
 
@@ -41,6 +46,7 @@ public class ConditionBranchingAction : ActionBase
         VariableKey = ""; VariableType = 0;
         VariableStringValue = "" ; VariableIntValue = 0; VariableFloatValue = 0; VariableBoolValue = false;
         ChoiseExpected = 0;
+        Operator = ConditionOperator.Equals;
     }
 
     private bool Check()
@@ -59,13 +65,50 @@ public class ConditionBranchingAction : ActionBase
                     if (!GameManager.Instance.Data.IntValues.ContainsKey(VariableKey))
                         break;
 
-                    compareVariableResult = GameManager.Instance.Data.IntValues[VariableKey] == VariableIntValue;
+                    switch (Operator)
+                    {
+                        case ConditionOperator.Equals:
+                            compareVariableResult = GameManager.Instance.Data.IntValues[VariableKey] == VariableIntValue;
+                            break;
+                        case ConditionOperator.More:
+                            compareVariableResult = GameManager.Instance.Data.IntValues[VariableKey] > VariableIntValue;
+                            break;
+                        case ConditionOperator.Less:
+                            compareVariableResult = GameManager.Instance.Data.IntValues[VariableKey] < VariableIntValue;
+                            break;
+                        case ConditionOperator.MoreOrEquals:
+                            compareVariableResult = GameManager.Instance.Data.IntValues[VariableKey] >= VariableIntValue;
+                            break;
+                        case ConditionOperator.LessOrEquals:
+                            compareVariableResult = GameManager.Instance.Data.IntValues[VariableKey] <= VariableIntValue;
+                            break;
+                    }
+
                     break;
                 case 2:
                     if (!GameManager.Instance.Data.FloatValues.ContainsKey(VariableKey))
                         break;
 
-                    compareVariableResult = GameManager.Instance.Data.FloatValues[VariableKey] == VariableFloatValue;
+
+                    switch (Operator)
+                    {
+                        case ConditionOperator.Equals:
+                            compareVariableResult = GameManager.Instance.Data.FloatValues[VariableKey] == VariableFloatValue;
+                            break;
+                        case ConditionOperator.More:
+                            compareVariableResult = GameManager.Instance.Data.FloatValues[VariableKey] > VariableFloatValue;
+                            break;
+                        case ConditionOperator.Less:
+                            compareVariableResult = GameManager.Instance.Data.FloatValues[VariableKey] < VariableFloatValue;
+                            break;
+                        case ConditionOperator.MoreOrEquals:
+                            compareVariableResult = GameManager.Instance.Data.FloatValues[VariableKey] >= VariableFloatValue;
+                            break;
+                        case ConditionOperator.LessOrEquals:
+                            compareVariableResult = GameManager.Instance.Data.FloatValues[VariableKey] <= VariableFloatValue;
+                            break;
+                    }
+
                     break;
                 case 3:
                     if (!GameManager.Instance.Data.BoolValues.ContainsKey(VariableKey))
@@ -172,8 +215,51 @@ public class ConditionBranchingAction : ActionBase
 
     public override string GetInfo()
     {
-        string isVar = CompareVariable ? $", По переменной" : "";
+        
         string isChoise = CompareChoise ? $", Выбор == {ChoiseExpected}" : "";
+
+        string isVar = string.Empty;
+
+        if (CompareVariable)
+        {
+            string vartype;
+            string val;
+            switch (VariableType)
+            {
+                case 0:
+                    vartype = "STRING";
+                    val = VariableStringValue;
+                    break;
+                case 1:
+                    vartype = "INT";
+                    val = VariableIntValue.ToString();
+                    break;
+                case 2:
+                    vartype = "FLOAT";
+                    val = VariableFloatValue.ToString();
+                    break;
+                case 3:
+                    vartype = "BOOL";
+                    val = VariableBoolValue.ToString();
+                    break;
+                default:
+                    vartype = "UNDEF";
+                    val = "UNDEF";
+                    break;
+            }
+
+            string operatorstr = Operator switch
+            {
+                ConditionOperator.Equals => "==",
+                ConditionOperator.More => ">",
+                ConditionOperator.Less => "<",
+                ConditionOperator.MoreOrEquals => ">=",
+                ConditionOperator.LessOrEquals => "<=",
+                _ => "UNDEF",
+            };
+
+            isVar = $" По переменной ({vartype}): {VariableKey} {operatorstr} {val}";
+        }
 
         return $"ТИП: {Type}{isVar}{isChoise}";
     }

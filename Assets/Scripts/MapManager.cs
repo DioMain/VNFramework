@@ -16,6 +16,7 @@ public class MapManager : MonoBehaviour
     public BackgroundImageManager BackgroundImage;
     public CharactersManager Characters;
     public HistoryManager History;
+    public VideoManager Video;
 
     [Header("События паузы:")]
     [Space]
